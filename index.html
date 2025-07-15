@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dizealital - Digital Marketing Company</title>
-    <meta name="description" content="Dizealital - To digitally serve our clients in the best way possible. Web Development, SEO, Social Media Marketing, and more.">
+    <meta name="description"
+        content="Dizealital - To digitally serve our clients in the best way possible. Web Development, SEO, Social Media Marketing, and more.">
     <link rel="icon" type="image/x-icon" href="/placeholder.svg?height=32&width=32">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script>
         tailwind.config = {
             theme: {
@@ -22,6 +26,7 @@
         }
     </script>
 </head>
+
 <body class="bg-gray-50">
     <!-- Navigation -->
     <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
@@ -29,7 +34,7 @@
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
                     <div class="flex-shrink-0 flex items-center">
-                        <img src="Logo.jpg" alt="Dizealital Logo" class="h-10 w-10 mr-3">
+                        <img src="Logo.png" alt="Dizealital Logo" class="h-10 w-10 mr-3">
                         <h1 class="text-2xl font-bold text-primary">Dizealital</h1>
                     </div>
                 </div>
@@ -37,10 +42,16 @@
                 <!-- Desktop Menu -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#home" class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
-                        <a href="#services" class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
-                        <a href="#about" class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
-                        <a href="#contact" class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                        <a href="#home"
+                            class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#services"
+                            class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="#about"
+                            class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="#team"
+                            class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Our Team</a>
+                        <a href="#contact"
+                            class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
                     </div>
                 </div>
 
@@ -56,44 +67,254 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#home" class="mobile-nav-link block text-gray-700 hover:text-primary px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="#services" class="mobile-nav-link block text-gray-700 hover:text-primary px-3 py-2 rounded-md text-base font-medium">Services</a>
-                <a href="#about" class="mobile-nav-link block text-gray-700 hover:text-primary px-3 py-2 rounded-md text-base font-medium">About</a>
-                <a href="#contact" class="mobile-nav-link block text-gray-700 hover:text-primary px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="#home"
+                    class="mobile-nav-link block text-gray-700 hover:text-primary px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#services"
+                    class="mobile-nav-link block text-gray-700 hover:text-primary px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#about"
+                    class="mobile-nav-link block text-gray-700 hover:text-primary px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#contact"
+                    class="mobile-nav-link block text-gray-700 hover:text-primary px-3 py-2 rounded-md text-base font-medium">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-16 bg-gradient-to-br from-primary to-secondary text-white relative overflow-hidden">
-        <!-- Background Image -->
-        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('/placeholder.svg?height=800&width=1200');"></div>
+    <section id="home"
+        class="min-h-screen pt-16 bg-gradient-to-br from-primary via-secondary to-purple-900 text-white relative overflow-hidden">
+        <!-- Animated Background Particles -->
+        <div class="floating-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <!-- Background Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+
+        <!-- Geometric Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div
+                class="absolute top-20 left-20 w-32 h-32 bg-gradient-to-r from-accent to-yellow-400 rounded-full opacity-10 animate-float">
+            </div>
+            <div
+                class="absolute bottom-20 right-20 w-48 h-48 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full opacity-10 animate-bounce-slow">
+            </div>
+            <div
+                class="absolute top-1/2 left-10 w-24 h-24 bg-gradient-to-r from-blue-400 to-indigo-400 transform rotate-45 opacity-15 animate-rotate-slow">
+            </div>
+        </div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="text-center lg:text-left">
-                    <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-                        Welcome to <span class="text-accent">Dizealital</span>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+                <!-- Left Content -->
+                <div class="text-center lg:text-left space-y-8">
+                    <!-- Welcome Badge -->
+                    <div
+                        class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 animate-fade-in">
+                        <span class="w-2 h-2 bg-green-400 rounded-full mr-3 animate-pulse"></span>
+                        <span class="text-sm font-medium">Welcome to the Future of Digital Marketing</span>
+                    </div>
+
+                    <!-- Main Heading -->
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in">
+                        Welcome to <br>
+                        <span class="gradient-text typing-animation">Dizealital</span>
                     </h1>
-                    <p class="text-xl md:text-2xl mb-8 opacity-90">
-                        To digitally serve our clients in the best way possible
+
+                    <!-- Subtitle -->
+                    <p class="text-xl md:text-2xl mb-8 opacity-90 animate-slide-up font-light">
+                        To digitally serve our clients in the <span class="text-accent font-semibold">best way
+                            possible</span>
                     </p>
-                    <p class="text-lg mb-10 opacity-80">
-                        Your trusted partner for comprehensive digital marketing solutions that drive growth and maximize your online presence.
+
+                    <!-- Description -->
+                    <p class="text-lg mb-10 opacity-80 leading-relaxed animate-slide-up max-w-2xl">
+                        Your trusted partner for comprehensive digital marketing solutions that drive growth,
+                        maximize your online presence, and transform your business into a digital powerhouse.
                     </p>
-                    <div class="space-x-4">
-                        <a href="#services" class="bg-accent hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition-colors inline-block">
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-6 mb-10 animate-slide-up">
+                        <div class="text-center stats-counter">
+                            <div class="text-2xl font-bold text-accent">500+</div>
+                            <div class="text-sm opacity-80">Happy Clients</div>
+                        </div>
+                        <div class="text-center stats-counter">
+                            <div class="text-2xl font-bold text-accent">98%</div>
+                            <div class="text-sm opacity-80">Success Rate</div>
+                        </div>
+                        <div class="text-center stats-counter">
+                            <div class="text-2xl font-bold text-accent">24/7</div>
+                            <div class="text-sm opacity-80">Support</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 animate-slide-up">
+                        <a href="#services"
+                            class="hero-button bg-accent hover:bg-yellow-500 text-gray-900 font-bold py-4 px-8 rounded-xl transition-all duration-300 inline-flex items-center justify-center group transform hover:scale-105 animate-pulse-glow">
+                            <i class="fas fa-rocket mr-2 group-hover:animate-bounce"></i>
                             Our Services
                         </a>
-                        <a href="#contact" class="border-2 border-white hover:bg-white hover:text-primary text-white font-bold py-3 px-8 rounded-lg transition-colors inline-block">
+                        <a href="#contact"
+                            class="hero-button glass-effect hover:bg-white hover:text-primary text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 inline-flex items-center justify-center group transform hover:scale-105">
+                            <i class="fas fa-paper-plane mr-2 group-hover:animate-bounce"></i>
                             Get Started
                         </a>
                     </div>
+
+                    <!-- Social Proof -->
+                    <div class="flex items-center justify-center lg:justify-start space-x-6 pt-8 animate-slide-up">
+                        <div class="text-sm opacity-80">Trusted by:</div>
+                        <div class="flex space-x-4">
+                            <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                                <i class="fab fa-google text-sm"></i>
+                            </div>
+                            <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                                <i class="fab fa-facebook text-sm"></i>
+                            </div>
+                            <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                                <i class="fab fa-instagram text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="hidden lg:block">
-                    <img src="/placeholder.svg?height=500&width=600" alt="Digital Marketing Illustration" class="w-full h-auto rounded-lg shadow-2xl">
+
+                <!-- Right Content - Custom SVG Illustration -->
+                <div class="hidden lg:block animate-float">
+                    <div class="relative">
+                        <svg viewBox="0 0 600 500" class="w-full h-auto drop-shadow-2xl">
+                            <!-- Background Circle -->
+                            <circle cx="300" cy="250" r="200" fill="url(#bgGradient)" opacity="0.1" />
+
+                            <!-- Laptop Base -->
+                            <rect x="150" y="200" width="300" height="200" rx="20" fill="url(#laptopGradient)"
+                                stroke="#4F46E5" stroke-width="2" />
+
+                            <!-- Laptop Screen -->
+                            <rect x="170" y="150" width="260" height="160" rx="15" fill="url(#screenGradient)"
+                                stroke="#6366F1" stroke-width="2" />
+
+                            <!-- Screen Content -->
+                            <rect x="180" y="160" width="240" height="20" rx="10" fill="#10B981" opacity="0.8" />
+                            <rect x="180" y="190" width="180" height="15" rx="7" fill="#F59E0B" opacity="0.7" />
+                            <rect x="180" y="215" width="200" height="15" rx="7" fill="#EF4444" opacity="0.7" />
+                            <rect x="180" y="240" width="160" height="15" rx="7" fill="#8B5CF6" opacity="0.7" />
+
+                            <!-- Chart on Screen -->
+                            <rect x="280" y="180" width="130" height="80" rx="5" fill="rgba(255,255,255,0.1)"
+                                stroke="rgba(255,255,255,0.3)" stroke-width="1" />
+                            <polyline points="290,240 310,220 330,200 350,180 370,160 390,140" fill="none"
+                                stroke="#10B981" stroke-width="3" />
+                            <circle cx="310" cy="220" r="3" fill="#10B981" />
+                            <circle cx="330" cy="200" r="3" fill="#10B981" />
+                            <circle cx="350" cy="180" r="3" fill="#10B981" />
+                            <circle cx="370" cy="160" r="3" fill="#10B981" />
+
+                            <!-- Floating Icons -->
+                            <g class="animate-bounce-slow">
+                                <circle cx="100" cy="100" r="30" fill="url(#iconGradient1)" />
+                                <path d="M85 100 L100 85 L115 100 L100 115 Z" fill="white" />
+                            </g>
+
+                            <g class="animate-float" style="animation-delay: 2s;">
+                                <circle cx="500" cy="120" r="25" fill="url(#iconGradient2)" />
+                                <rect x="490" y="110" width="20" height="20" rx="3" fill="white" />
+                            </g>
+
+                            <g class="animate-bounce-slow" style="animation-delay: 4s;">
+                                <circle cx="520" cy="350" r="35" fill="url(#iconGradient3)" />
+                                <circle cx="520" cy="350" r="15" fill="none" stroke="white" stroke-width="3" />
+                                <circle cx="520" cy="350" r="5" fill="white" />
+                            </g>
+
+                            <g class="animate-float" style="animation-delay: 6s;">
+                                <circle cx="80" cy="350" r="28" fill="url(#iconGradient4)" />
+                                <path d="M65 350 Q80 335 95 350 Q80 365 65 350" fill="white" />
+                            </g>
+
+                            <!-- Growth Arrow -->
+                            <g class="animate-scale-pulse">
+                                <path d="M400 300 L480 220" stroke="#10B981" stroke-width="4"
+                                    marker-end="url(#arrowhead)" />
+                                <text x="440" y="250" fill="#10B981" font-size="14" font-weight="bold">Growth</text>
+                            </g>
+
+                            <!-- Social Media Icons -->
+                            <g class="animate-float" style="animation-delay: 1s;">
+                                <circle cx="450" cy="80" r="20" fill="#1877F2" />
+                                <text x="443" y="87" fill="white" font-size="16" font-weight="bold">f</text>
+                            </g>
+
+                            <g class="animate-bounce-slow" style="animation-delay: 3s;">
+                                <circle cx="150" cy="80" r="18" fill="#E4405F" />
+                                <rect x="142" y="72" width="16" height="16" rx="4" fill="white" />
+                                <circle cx="150" cy="80" r="4" fill="#E4405F" />
+                            </g>
+
+                            <!-- Data Visualization -->
+                            <g class="animate-scale-pulse" style="animation-delay: 2s;">
+                                <rect x="50" y="250" width="15" height="40" fill="#F59E0B" />
+                                <rect x="70" y="230" width="15" height="60" fill="#10B981" />
+                                <rect x="90" y="210" width="15" height="80" fill="#8B5CF6" />
+                                <rect x="110" y="190" width="15" height="100" fill="#EF4444" />
+                            </g>
+
+                            <!-- Definitions -->
+                            <defs>
+                                <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                </linearGradient>
+
+                                <linearGradient id="laptopGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#374151;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#1F2937;stop-opacity:1" />
+                                </linearGradient>
+
+                                <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1F2937;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#111827;stop-opacity:1" />
+                                </linearGradient>
+
+                                <linearGradient id="iconGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+                                </linearGradient>
+
+                                <linearGradient id="iconGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+                                </linearGradient>
+
+                                <linearGradient id="iconGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+                                </linearGradient>
+
+                                <linearGradient id="iconGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+                                </linearGradient>
+
+                                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5"
+                                    orient="auto">
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="#10B981" />
+                                </marker>
+                            </defs>
+                        </svg>
+                    </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+                <div class="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
             </div>
         </div>
     </section>
@@ -105,12 +326,18 @@
                 <p class="text-gray-600 font-medium">Trusted by leading companies</p>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-60">
-                <img src="/placeholder.svg?height=60&width=120" alt="Client Logo 1" class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
-                <img src="/placeholder.svg?height=60&width=120" alt="Client Logo 2" class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
-                <img src="/placeholder.svg?height=60&width=120" alt="Client Logo 3" class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
-                <img src="/placeholder.svg?height=60&width=120" alt="Client Logo 4" class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
-                <img src="/placeholder.svg?height=60&width=120" alt="Client Logo 5" class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
-                <img src="/placeholder.svg?height=60&width=120" alt="Client Logo 6" class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
+                <img src="/placeholder.svg?height=60&width=120" alt="Client Logo 1"
+                    class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
+                <img src="/placeholder.svg?height=60&width=120" alt="Client Logo 2"
+                    class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
+                <img src="/placeholder.svg?height=60&width=120" alt="Client Logo 3"
+                    class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
+                <img src="/placeholder.svg?height=60&width=120" alt="Client Logo 4"
+                    class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
+                <img src="/placeholder.svg?height=60&width=120" alt="Client Logo 5"
+                    class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
+                <img src="/placeholder.svg?height=60&width=120" alt="Client Logo 6"
+                    class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
             </div>
         </div>
     </section>
@@ -121,105 +348,177 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    We offer comprehensive digital marketing solutions to help your business thrive in the digital landscape.
+                    We offer comprehensive digital marketing solutions to help your business thrive in the digital
+                    landscape.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Web Development -->
-                <div class="service-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer group">
+                <div
+                    class="service-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer group">
                     <div class="mb-4">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Web Development" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <div
+                            class="w-full h-32 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg mb-4 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2z" />
+                            </svg>
+                        </div>
                         <div class="text-primary">
                             <i class="fas fa-code text-3xl"></i>
                         </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">Web Development</h3>
-                    <p class="text-gray-600">Custom websites and web applications built with modern technologies for optimal performance and user experience.</p>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">Web
+                        Development</h3>
+                    <p class="text-gray-600">Custom websites and web applications built with modern technologies for
+                        optimal performance and user experience.</p>
                 </div>
 
                 <!-- SEO -->
-                <div class="service-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer group">
+                <div
+                    class="service-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer group">
                     <div class="mb-4">
-                        <img src="/placeholder.svg?height=200&width=300" alt="SEO Services" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <div
+                            class="w-full h-32 bg-gradient-to-br from-green-100 to-green-200 rounded-lg mb-4 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                                <path d="M12 10h-2v3H9v-3H7V9h2V7h1v2h2v1z" />
+                            </svg>
+                        </div>
                         <div class="text-primary">
                             <i class="fas fa-search text-3xl"></i>
                         </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">Search Engine Optimisation (SEO)</h3>
-                    <p class="text-gray-600">Improve your website's visibility and ranking on search engines to drive organic traffic and leads.</p>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">
+                        Search Engine Optimisation (SEO)</h3>
+                    <p class="text-gray-600">Improve your website's visibility and ranking on search engines to drive
+                        organic traffic and leads.</p>
                 </div>
 
                 <!-- Facebook Ads -->
-                <div class="service-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer group">
+                <div
+                    class="service-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer group">
                     <div class="mb-4">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Facebook Ads" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <div
+                            class="w-full h-32 bg-gradient-to-br from-blue-100 to-blue-300 rounded-lg mb-4 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-blue-700" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </div>
                         <div class="text-primary">
                             <i class="fab fa-facebook text-3xl"></i>
                         </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">Facebook Ads</h3>
-                    <p class="text-gray-600">Targeted Facebook advertising campaigns to reach your ideal customers and maximize your return on investment.</p>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">
+                        Facebook Ads</h3>
+                    <p class="text-gray-600">Targeted Facebook advertising campaigns to reach your ideal customers and
+                        maximize your return on investment.</p>
                 </div>
 
                 <!-- Instagram Ads -->
-                <div class="service-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer group">
+                <div
+                    class="service-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer group">
                     <div class="mb-4">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Instagram Ads" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <div
+                            class="w-full h-32 bg-gradient-to-br from-pink-100 to-purple-200 rounded-lg mb-4 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-pink-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </div>
                         <div class="text-primary">
                             <i class="fab fa-instagram text-3xl"></i>
                         </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">Instagram Ads</h3>
-                    <p class="text-gray-600">Engaging Instagram ad campaigns that capture attention and drive conversions through visual storytelling.</p>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">
+                        Instagram Ads</h3>
+                    <p class="text-gray-600">Engaging Instagram ad campaigns that capture attention and drive
+                        conversions through visual storytelling.</p>
                 </div>
 
                 <!-- Email Marketing -->
-                <div class="service-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer group">
+                <div
+                    class="service-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer group">
                     <div class="mb-4">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Email Marketing" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <div
+                            class="w-full h-32 bg-gradient-to-br from-red-100 to-red-200 rounded-lg mb-4 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                        </div>
                         <div class="text-primary">
                             <i class="fas fa-envelope text-3xl"></i>
                         </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">Email Marketing</h3>
-                    <p class="text-gray-600">Strategic email campaigns that nurture leads, retain customers, and drive sales through personalized messaging.</p>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">
+                        Email Marketing</h3>
+                    <p class="text-gray-600">Strategic email campaigns that nurture leads, retain customers, and drive
+                        sales through personalized messaging.</p>
                 </div>
 
                 <!-- Social Media Marketing -->
-                <div class="service-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer group">
+                <div
+                    class="service-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer group">
                     <div class="mb-4">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Social Media Marketing" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <div
+                            class="w-full h-32 bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg mb-4 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+                            </svg>
+                        </div>
                         <div class="text-primary">
                             <i class="fas fa-share-alt text-3xl"></i>
                         </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">Social Media Marketing (SMM)</h3>
-                    <p class="text-gray-600">Comprehensive social media strategies to build brand awareness and engage with your target audience.</p>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">
+                        Social Media Marketing (SMM)</h3>
+                    <p class="text-gray-600">Comprehensive social media strategies to build brand awareness and engage
+                        with your target audience.</p>
                 </div>
 
                 <!-- Performance Marketing -->
-                <div class="service-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer group">
+                <div
+                    class="service-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer group">
                     <div class="mb-4">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Performance Marketing" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <div
+                            class="w-full h-32 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-lg mb-4 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" />
+                            </svg>
+                        </div>
                         <div class="text-primary">
                             <i class="fas fa-chart-line text-3xl"></i>
                         </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">Performance Marketing</h3>
-                    <p class="text-gray-600">Data-driven marketing campaigns focused on measurable results and optimized for maximum ROI.</p>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">
+                        Performance Marketing</h3>
+                    <p class="text-gray-600">Data-driven marketing campaigns focused on measurable results and optimized
+                        for maximum ROI.</p>
                 </div>
 
                 <!-- Content Marketing -->
-                <div class="service-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer group">
+                <div
+                    class="service-card bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer group">
                     <div class="mb-4">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Content Marketing" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <div
+                            class="w-full h-32 bg-gradient-to-br from-orange-100 to-orange-200 rounded-lg mb-4 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h8c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
+                            </svg>
+                        </div>
                         <div class="text-primary">
                             <i class="fas fa-pen-fancy text-3xl"></i>
                         </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">Content Marketing</h3>
-                    <p class="text-gray-600">Compelling content strategies that attract, engage, and convert your audience into loyal customers.</p>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">
+                        Content Marketing</h3>
+                    <p class="text-gray-600">Compelling content strategies that attract, engage, and convert your
+                        audience into loyal customers.</p>
                 </div>
             </div>
         </div>
@@ -230,68 +529,174 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="order-2 lg:order-1">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About Dizealital</h2>
-                    <p class="text-lg text-gray-600 mb-6">
-                        At Dizealital, we are passionate about helping businesses succeed in the digital world. Our mission is simple yet powerful: <strong>"To digitally serve our clients in the best way possible."</strong>
+                    <div
+                        class="inline-flex items-center px-4 py-2 bg-blue-50 rounded-full text-blue-600 text-sm font-medium mb-4">
+                        <i class="fas fa-star mr-2"></i>
+                        About Our Agency
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                        About <span class="text-primary">Dizealital</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        At Dizealital, we are passionate about helping businesses succeed in the digital world. Our
+                        mission is simple yet powerful: <strong class="text-gray-900">"To digitally serve our clients in
+                            the best way
+                            possible."</strong>
                     </p>
-                    <p class="text-lg text-gray-600 mb-6">
-                        We combine creativity, technology, and data-driven strategies to deliver exceptional results for our clients. Our team of experts specializes in various aspects of digital marketing, ensuring comprehensive solutions for your business needs.
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        We combine creativity, technology, and data-driven strategies to deliver exceptional results for
+                        our clients. Our team of experts specializes in various aspects of digital marketing, ensuring
+                        comprehensive solutions for your business needs.
                     </p>
-                    <div class="grid grid-cols-2 gap-4 mt-8">
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-primary">100+</div>
-                            <div class="text-gray-600">Happy Clients</div>
+
+                    <!-- Stats Grid with enhanced styling -->
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="text-center bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                            <div class="text-3xl font-bold text-primary mb-2">100+</div>
+                            <div class="text-gray-600 font-medium">Happy Clients</div>
                         </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-primary">500+</div>
-                            <div class="text-gray-600">Projects Completed</div>
+                        <div class="text-center bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                            <div class="text-3xl font-bold text-primary mb-2">500+</div>
+                            <div class="text-gray-600 font-medium">Projects Completed</div>
                         </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-primary">5+</div>
-                            <div class="text-gray-600">Years Experience</div>
+                        <div class="text-center bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                            <div class="text-3xl font-bold text-primary mb-2">5+</div>
+                            <div class="text-gray-600 font-medium">Years Experience</div>
                         </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-primary">24/7</div>
-                            <div class="text-gray-600">Support</div>
+                        <div class="text-center bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                            <div class="text-3xl font-bold text-primary mb-2">24/7</div>
+                            <div class="text-gray-600 font-medium">Support</div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Enhanced SVG Illustration -->
                 <div class="order-1 lg:order-2">
-                    <img src="/placeholder.svg?height=500&width=600" alt="About Dizealital" class="w-full h-auto rounded-lg shadow-lg">
+                    <div class="relative bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 shadow-xl">
+                        <svg class="w-full h-auto" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background elements -->
+                            <circle cx="450" cy="100" r="80" fill="#E0E7FF" opacity="0.5" />
+                            <circle cx="150" cy="400" r="60" fill="#DBEAFE" opacity="0.5" />
+
+                            <!-- Main computer/laptop -->
+                            <rect x="200" y="180" width="200" height="140" rx="8" fill="#1F2937" stroke="#374151"
+                                stroke-width="2" />
+                            <rect x="210" y="190" width="180" height="110" rx="4" fill="#3B82F6" />
+
+                            <!-- Screen content - dashboard -->
+                            <rect x="220" y="200" width="160" height="8" rx="4" fill="#FFFFFF" opacity="0.9" />
+                            <rect x="220" y="220" width="100" height="6" rx="3" fill="#FFFFFF" opacity="0.7" />
+                            <rect x="220" y="235" width="80" height="6" rx="3" fill="#FFFFFF" opacity="0.7" />
+
+                            <!-- Charts on screen -->
+                            <rect x="330" y="210" width="40" height="30" rx="2" fill="#FFFFFF" opacity="0.2" />
+                            <polyline points="335,235 340,225 345,230 350,220 355,225 360,215" stroke="#FFFFFF"
+                                stroke-width="2" fill="none" />
+
+                            <!-- Laptop base -->
+                            <rect x="180" y="320" width="240" height="20" rx="10" fill="#374151" />
+
+                            <!-- Floating elements around laptop -->
+                            <!-- Email icon -->
+                            <circle cx="120" cy="150" r="25" fill="#EF4444" />
+                            <path d="M110 143 L120 150 L130 143 M108 145 L132 145 L132 160 L108 160 Z" stroke="#FFFFFF"
+                                stroke-width="2" fill="none" />
+
+                            <!-- Social media icon -->
+                            <circle cx="480" cy="200" r="25" fill="#8B5CF6" />
+                            <circle cx="475" cy="195" r="4" fill="#FFFFFF" />
+                            <circle cx="485" cy="195" r="4" fill="#FFFFFF" />
+                            <circle cx="480" cy="205" r="4" fill="#FFFFFF" />
+                            <path d="M475 195 L480 205 M485 195 L480 205" stroke="#FFFFFF" stroke-width="2" />
+
+                            <!-- SEO/Search icon -->
+                            <circle cx="150" cy="300" r="25" fill="#10B981" />
+                            <circle cx="150" cy="300" r="8" fill="none" stroke="#FFFFFF" stroke-width="2" />
+                            <line x1="156" y1="306" x2="162" y2="312" stroke="#FFFFFF" stroke-width="2" />
+
+                            <!-- Analytics chart -->
+                            <rect x="450" y="300" width="50" height="50" rx="8" fill="#F59E0B" />
+                            <rect x="460" y="330" width="6" height="10" fill="#FFFFFF" />
+                            <rect x="470" y="325" width="6" height="15" fill="#FFFFFF" />
+                            <rect x="480" y="320" width="6" height="20" fill="#FFFFFF" />
+
+                            <!-- Connecting lines -->
+                            <line x1="145" y1="150" x2="200" y2="200" stroke="#E5E7EB" stroke-width="2"
+                                stroke-dasharray="5,5" />
+                            <line x1="455" y1="200" x2="400" y2="220" stroke="#E5E7EB" stroke-width="2"
+                                stroke-dasharray="5,5" />
+                            <line x1="175" y1="300" x2="200" y2="280" stroke="#E5E7EB" stroke-width="2"
+                                stroke-dasharray="5,5" />
+                            <line x1="450" y1="320" x2="400" y2="300" stroke="#E5E7EB" stroke-width="2"
+                                stroke-dasharray="5,5" />
+
+                            <!-- Decorative elements -->
+                            <circle cx="80" cy="80" r="3" fill="#3B82F6" />
+                            <circle cx="520" cy="80" r="3" fill="#8B5CF6" />
+                            <circle cx="80" cy="420" r="3" fill="#EF4444" />
+                            <circle cx="520" cy="420" r="3" fill="#10B981" />
+
+                            <!-- Person silhouette -->
+                            <circle cx="300" cy="380" r="15" fill="#6B7280" />
+                            <path d="M285 395 Q285 385 300 385 Q315 385 315 395 L315 420 L285 420 Z" fill="#6B7280" />
+                        </svg>
+
+                        <!-- Floating animation elements -->
+                        <div class="absolute top-4 right-4 w-8 h-8 bg-blue-500 rounded-full opacity-20 animate-bounce">
+                        </div>
+                        <div class="absolute bottom-4 left-4 w-6 h-6 bg-purple-500 rounded-full opacity-20 animate-bounce"
+                            style="animation-delay: 0.5s;"></div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Why Choose Us Section -->
-            <div class="mt-16 bg-white p-8 rounded-lg shadow-lg">
-                <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Why Choose Us?</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="text-center">
-                        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-users text-2xl text-primary"></i>
+            <!-- Enhanced Why Choose Us Section -->
+            <div class="mt-20 bg-white p-8 md:p-12 rounded-2xl shadow-xl">
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Why Choose Us?</h3>
+                    <p class="text-gray-600 max-w-2xl mx-auto">We deliver exceptional results through our commitment to
+                        excellence, innovation, and client satisfaction.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div
+                            class="bg-gradient-to-br from-blue-50 to-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg transition-shadow">
+                            <i class="fas fa-users text-3xl text-primary"></i>
                         </div>
-                        <h4 class="font-semibold text-gray-900 mb-2">Expert Team</h4>
-                        <p class="text-gray-600 text-sm">Skilled professionals with years of industry experience</p>
+                        <h4 class="font-bold text-gray-900 mb-3 text-lg">Expert Team</h4>
+                        <p class="text-gray-600">Skilled professionals with years of industry experience and proven
+                            expertise</p>
                     </div>
-                    <div class="text-center">
-                        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-trophy text-2xl text-primary"></i>
+
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div
+                            class="bg-gradient-to-br from-green-50 to-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg transition-shadow">
+                            <i class="fas fa-trophy text-3xl text-green-600"></i>
                         </div>
-                        <h4 class="font-semibold text-gray-900 mb-2">Proven Results</h4>
-                        <p class="text-gray-600 text-sm">Track record of successful campaigns and satisfied clients</p>
+                        <h4 class="font-bold text-gray-900 mb-3 text-lg">Proven Results</h4>
+                        <p class="text-gray-600">Track record of successful campaigns and satisfied clients across
+                            industries</p>
                     </div>
-                    <div class="text-center">
-                        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-cogs text-2xl text-primary"></i>
+
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div
+                            class="bg-gradient-to-br from-purple-50 to-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg transition-shadow">
+                            <i class="fas fa-cogs text-3xl text-purple-600"></i>
                         </div>
-                        <h4 class="font-semibold text-gray-900 mb-2">Custom Solutions</h4>
-                        <p class="text-gray-600 text-sm">Tailored strategies to meet your specific business goals</p>
+                        <h4 class="font-bold text-gray-900 mb-3 text-lg">Custom Solutions</h4>
+                        <p class="text-gray-600">Tailored strategies designed to meet your specific business goals and
+                            objectives</p>
                     </div>
-                    <div class="text-center">
-                        <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-chart-bar text-2xl text-primary"></i>
+
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div
+                            class="bg-gradient-to-br from-orange-50 to-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg transition-shadow">
+                            <i class="fas fa-chart-bar text-3xl text-orange-600"></i>
                         </div>
-                        <h4 class="font-semibold text-gray-900 mb-2">Transparent Reporting</h4>
-                        <p class="text-gray-600 text-sm">Regular updates and detailed analytics on campaign performance</p>
+                        <h4 class="font-bold text-gray-900 mb-3 text-lg">Transparent Reporting</h4>
+                        <p class="text-gray-600">Regular updates and detailed analytics on campaign performance and ROI
+                        </p>
                     </div>
                 </div>
             </div>
@@ -299,20 +704,24 @@
     </section>
 
     <!-- Team Section -->
-    <section class="py-20 bg-white">
+    <section id="team" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Our dedicated team of digital marketing experts is here to help your business grow and succeed online.
+                    Our dedicated team of digital marketing experts is here to help your business grow and succeed
+                    online.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="text-center group">
                     <div class="relative mb-4">
-                        <img src="/placeholder.svg?height=250&width=250" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow">
-                        <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-10 rounded-full transition-all"></div>
+                        <img src="/placeholder.svg?height=250&width=250" alt="Team Member 1"
+                            class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow">
+                        <div
+                            class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-10 rounded-full transition-all">
+                        </div>
                     </div>
                     <h4 class="text-xl font-semibold text-gray-900 mb-1">John Smith</h4>
                     <p class="text-primary font-medium mb-2">CEO & Founder</p>
@@ -322,15 +731,18 @@
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors">
-                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-x-twitter"></i>
                         </a>
                     </div>
                 </div>
 
                 <div class="text-center group">
                     <div class="relative mb-4">
-                        <img src="/placeholder.svg?height=250&width=250" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow">
-                        <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-10 rounded-full transition-all"></div>
+                        <img src="/placeholder.svg?height=250&width=250" alt="Team Member 2"
+                            class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow">
+                        <div
+                            class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-10 rounded-full transition-all">
+                        </div>
                     </div>
                     <h4 class="text-xl font-semibold text-gray-900 mb-1">Sarah Johnson</h4>
                     <p class="text-primary font-medium mb-2">Creative Director</p>
@@ -347,8 +759,11 @@
 
                 <div class="text-center group">
                     <div class="relative mb-4">
-                        <img src="/placeholder.svg?height=250&width=250" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow">
-                        <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-10 rounded-full transition-all"></div>
+                        <img src="/placeholder.svg?height=250&width=250" alt="Team Member 3"
+                            class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow">
+                        <div
+                            class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-10 rounded-full transition-all">
+                        </div>
                     </div>
                     <h4 class="text-xl font-semibold text-gray-900 mb-1">Mike Davis</h4>
                     <p class="text-primary font-medium mb-2">SEO Specialist</p>
@@ -365,8 +780,11 @@
 
                 <div class="text-center group">
                     <div class="relative mb-4">
-                        <img src="/placeholder.svg?height=250&width=250" alt="Team Member 4" class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow">
-                        <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-10 rounded-full transition-all"></div>
+                        <img src="/placeholder.svg?height=250&width=250" alt="Team Member 4"
+                            class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow">
+                        <div
+                            class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-10 rounded-full transition-all">
+                        </div>
                     </div>
                     <h4 class="text-xl font-semibold text-gray-900 mb-1">Emily Chen</h4>
                     <p class="text-primary font-medium mb-2">Social Media Manager</p>
@@ -397,7 +815,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-lg">
                     <div class="flex items-center mb-4">
-                        <img src="/placeholder.svg?height=60&width=60" alt="Client 1" class="w-12 h-12 rounded-full mr-4">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Client 1"
+                            class="w-12 h-12 rounded-full mr-4">
                         <div>
                             <h4 class="font-semibold text-gray-900">Alex Thompson</h4>
                             <p class="text-gray-600 text-sm">CEO, TechStart Inc.</p>
@@ -410,12 +829,14 @@
                         <i class="fas fa-star text-yellow-400"></i>
                         <i class="fas fa-star text-yellow-400"></i>
                     </div>
-                    <p class="text-gray-600">"Dizealital transformed our online presence completely. Our website traffic increased by 300% and conversions doubled within 6 months!"</p>
+                    <p class="text-gray-600">"Dizealital transformed our online presence completely. Our website traffic
+                        increased by 300% and conversions doubled within 6 months!"</p>
                 </div>
 
                 <div class="bg-white p-6 rounded-lg shadow-lg">
                     <div class="flex items-center mb-4">
-                        <img src="/placeholder.svg?height=60&width=60" alt="Client 2" class="w-12 h-12 rounded-full mr-4">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Client 2"
+                            class="w-12 h-12 rounded-full mr-4">
                         <div>
                             <h4 class="font-semibold text-gray-900">Maria Rodriguez</h4>
                             <p class="text-gray-600 text-sm">Marketing Director, Fashion Hub</p>
@@ -428,12 +849,14 @@
                         <i class="fas fa-star text-yellow-400"></i>
                         <i class="fas fa-star text-yellow-400"></i>
                     </div>
-                    <p class="text-gray-600">"Their social media campaigns are incredible! Our Instagram engagement went through the roof and we gained 50K followers in just 3 months."</p>
+                    <p class="text-gray-600">"Their social media campaigns are incredible! Our Instagram engagement went
+                        through the roof and we gained 50K followers in just 3 months."</p>
                 </div>
 
                 <div class="bg-white p-6 rounded-lg shadow-lg">
                     <div class="flex items-center mb-4">
-                        <img src="/placeholder.svg?height=60&width=60" alt="Client 3" class="w-12 h-12 rounded-full mr-4">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Client 3"
+                            class="w-12 h-12 rounded-full mr-4">
                         <div>
                             <h4 class="font-semibold text-gray-900">David Kim</h4>
                             <p class="text-gray-600 text-sm">Founder, Local Eats</p>
@@ -446,115 +869,214 @@
                         <i class="fas fa-star text-yellow-400"></i>
                         <i class="fas fa-star text-yellow-400"></i>
                     </div>
-                    <p class="text-gray-600">"Professional, reliable, and results-driven. Dizealital helped us achieve our business goals faster than we ever imagined possible."</p>
+                    <p class="text-gray-600">"Professional, reliable, and results-driven. Dizealital helped us achieve
+                        our business goals faster than we ever imagined possible."</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Ready to take your digital presence to the next level? Contact us today for a free consultation.
+    <section id="contact" class="py-20 relative overflow-hidden">
+        <!-- Floating Background Shapes -->
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+
+        <!-- Background Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 opacity-70"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Header Section -->
+            <div class="text-center mb-16 animate-fadeInUp">
+                <h2 class="text-4xl md:text-6xl font-bold gradient-text mb-6 animate-glow">
+                    Let's Connect
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Ready to transform your digital presence? We'd love to hear from you!
+                    Let's create something extraordinary together.
                 </p>
+                <div class="mt-8 flex justify-center">
+                    <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 <!-- Contact Form -->
-                <div class="bg-gray-50 p-8 rounded-lg">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Send us a message</h3>
-                    <form id="contact-form" class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                <div class="animate-slideInLeft">
+                    <div
+                        class="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-2xl border border-white/20 contact-card">
+                        <div class="flex items-center mb-8">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-paper-plane text-white text-xl"></i>
                             </div>
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <h3 class="text-2xl font-bold text-gray-900">Send us a message</h3>
+                        </div>
+
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="relative">
+                                    <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                                        <i class="fas fa-user mr-2 text-primary"></i>Name
+                                    </label>
+                                    <input type="text" id="name" name="name" required
+                                        class="form-input w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent bg-white/50 backdrop-blur-sm">
+                                </div>
+                                <div class="relative">
+                                    <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                                        <i class="fas fa-envelope mr-2 text-primary"></i>Email
+                                    </label>
+                                    <input type="email" id="email" name="email" required
+                                        class="form-input w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent bg-white/50 backdrop-blur-sm">
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Service Interested In</label>
-                            <select id="service" name="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
-                                <option value="">Select a service</option>
-                                <option value="web-development">Web Development</option>
-                                <option value="seo">Search Engine Optimisation (SEO)</option>
-                                <option value="facebook-ads">Facebook Ads</option>
-                                <option value="instagram-ads">Instagram Ads</option>
-                                <option value="email-marketing">Email Marketing</option>
-                                <option value="smm">Social Media Marketing (SMM)</option>
-                                <option value="performance-marketing">Performance Marketing</option>
-                                <option value="content-marketing">Content Marketing</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-lg transition-colors">
-                            Send Message
-                        </button>
-                    </form>
+
+                            <div>
+                                <label for="service" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    <i class="fas fa-cogs mr-2 text-primary"></i>Service Interested In
+                                </label>
+                                <select id="service" name="service"
+                                    class="form-input w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent bg-white/50 backdrop-blur-sm">
+                                    <option value="">Select a service</option>
+                                    <option value="web-development">🌐 Web Development</option>
+                                    <option value="seo">🔍 Search Engine Optimisation (SEO)</option>
+                                    <option value="facebook-ads">📘 Facebook Ads</option>
+                                    <option value="instagram-ads">📸 Instagram Ads</option>
+                                    <option value="email-marketing">📧 Email Marketing</option>
+                                    <option value="smm">📱 Social Media Marketing (SMM)</option>
+                                    <option value="performance-marketing">📊 Performance Marketing</option>
+                                    <option value="content-marketing">✍️ Content Marketing</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    <i class="fas fa-comment mr-2 text-primary"></i>Message
+                                </label>
+                                <textarea id="message" name="message" rows="4" required
+                                    class="form-input w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent bg-white/50 backdrop-blur-sm resize-none"></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="ripple w-full bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                                <i class="fas fa-rocket mr-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
 
                 <!-- Contact Info -->
-                <div class="space-y-8">
-                    <div class="bg-gradient-to-br from-primary to-secondary p-8 rounded-lg text-white">
-                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center">
-                                <i class="fas fa-map-marker-alt text-xl mr-4"></i>
-                                <div>
-                                    <h4 class="font-semibold">Address</h4>
-                                    <p class="opacity-90">123 Digital Street, Marketing City, MC 12345</p>
+                <div class="animate-slideInRight space-y-8">
+                    <!-- Contact Information Card -->
+                    <div
+                        class="bg-gradient-to-br from-primary to-secondary p-8 rounded-2xl text-white shadow-2xl contact-card relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/10"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-center mb-8">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-info-circle text-white text-xl"></i>
                                 </div>
+                                <h3 class="text-2xl font-bold">Contact Information</h3>
                             </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-phone text-xl mr-4"></i>
-                                <div>
-                                    <h4 class="font-semibold">Phone</h4>
-                                    <p class="opacity-90">+1 (555) 123-4567</p>
+
+                            <div class="space-y-6">
+                                <div
+                                    class="flex items-center p-4 bg-white/10 rounded-xl backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
+                                    <div
+                                        class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-map-marker-alt text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-lg">Address</h4>
+                                        <p class="opacity-90">123 Digital Street, Marketing City, MC 12345</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-envelope text-xl mr-4"></i>
-                                <div>
-                                    <h4 class="font-semibold">Email</h4>
-                                    <p class="opacity-90">info@dizealital.com</p>
+
+                                <div
+                                    class="flex items-center p-4 bg-white/10 rounded-xl backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
+                                    <div
+                                        class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-phone text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-lg">Phone</h4>
+                                        <p class="opacity-90">+1 (555) 123-4567</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="flex items-center">
-                                <i class="fas fa-clock text-xl mr-4"></i>
-                                <div>
-                                    <h4 class="font-semibold">Business Hours</h4>
-                                    <p class="opacity-90">Mon - Fri: 9:00 AM - 6:00 PM</p>
+
+                                <div
+                                    class="flex items-center p-4 bg-white/10 rounded-xl backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
+                                    <div
+                                        class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-envelope text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-lg">Email</h4>
+                                        <p class="opacity-90">info@dizealital.com</p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="flex items-center p-4 bg-white/10 rounded-xl backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
+                                    <div
+                                        class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-clock text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-lg">Business Hours</h4>
+                                        <p class="opacity-90">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="text-center">
-                        <img src="/placeholder.svg?height=300&width=400" alt="Contact Us" class="w-full h-auto rounded-lg shadow-lg">
+                    <!-- Interactive Visual Element -->
+                    <div class="relative">
+                        <div
+                            class="bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 rounded-2xl p-8 text-white text-center shadow-2xl contact-card">
+                            <div class="animate-float">
+                                <i class="fas fa-rocket text-6xl mb-4"></i>
+                            </div>
+                            <h4 class="text-2xl font-bold mb-2">Ready for Takeoff?</h4>
+                            <p class="opacity-90">Let's launch your project into the digital stratosphere!</p>
+                        </div>
                     </div>
 
-                    <div>
-                        <h4 class="text-lg font-semibold text-gray-900 mb-4">Follow Us</h4>
-                        <div class="flex space-x-4">
-                            <a href="#" class="bg-primary text-white p-3 rounded-full hover:bg-secondary transition-colors">
-                                <i class="fab fa-facebook"></i>
+                    <!-- Social Media -->
+                    <div class="text-center">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-6">Connect With Us</h4>
+                        <div class="flex justify-center space-x-4">
+                            <a href="#"
+                                class="group relative w-14 h-14 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center hover:from-blue-600 hover:to-blue-700 transform hover:scale-110 transition-all duration-300 shadow-lg">
+                                <i class="fab fa-facebook text-white text-xl"></i>
+                                <div
+                                    class="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-2 py-1 rounded text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    Facebook</div>
                             </a>
-                            <a href="#" class="bg-primary text-white p-3 rounded-full hover:bg-secondary transition-colors">
-                                <i class="fab fa-twitter"></i>
+                            <a href="#"
+                                class="group relative w-14 h-14 bg-gradient-to-r from-gray-800 to-gray-900 rounded-full flex items-center justify-center hover:from-gray-900 hover:to-black transform hover:scale-110 transition-all duration-300 shadow-lg">
+                                <i class="fab fa-x-twitter text-white text-xl"></i>
+                                <div
+                                    class="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-2 py-1 rounded text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    Twitter</div>
                             </a>
-                            <a href="#" class="bg-primary text-white p-3 rounded-full hover:bg-secondary transition-colors">
-                                <i class="fab fa-instagram"></i>
+                            <a href="#"
+                                class="group relative w-14 h-14 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center hover:from-pink-600 hover:to-purple-700 transform hover:scale-110 transition-all duration-300 shadow-lg">
+                                <i class="fab fa-instagram text-white text-xl"></i>
+                                <div
+                                    class="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-2 py-1 rounded text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    Instagram</div>
                             </a>
-                            <a href="#" class="bg-primary text-white p-3 rounded-full hover:bg-secondary transition-colors">
-                                <i class="fab fa-linkedin"></i>
+                            <a href="#"
+                                class="group relative w-14 h-14 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center hover:from-blue-700 hover:to-blue-800 transform hover:scale-110 transition-all duration-300 shadow-lg">
+                                <i class="fab fa-linkedin text-white text-xl"></i>
+                                <div
+                                    class="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-2 py-1 rounded text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    LinkedIn</div>
                             </a>
                         </div>
                     </div>
@@ -569,18 +1091,19 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="col-span-1 md:col-span-2">
                     <div class="flex items-center mb-4">
-                        <img src="Logo.jpg" alt="Dizealital Logo" class="h-10 w-10 mr-3">
+                        <img src="Logo.png" alt="Dizealital Logo" class="h-10 w-10 mr-3">
                         <h3 class="text-2xl font-bold">Dizealital</h3>
                     </div>
                     <p class="text-gray-300 mb-4">
-                        To digitally serve our clients in the best way possible. We are your trusted partner for comprehensive digital marketing solutions.
+                        To digitally serve our clients in the best way possible. We are your trusted partner for
+                        comprehensive digital marketing solutions.
                     </p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-300 hover:text-white transition-colors">
                             <i class="fab fa-facebook"></i>
                         </a>
                         <a href="#" class="text-gray-300 hover:text-white transition-colors">
-                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-x-twitter"></i>
                         </a>
                         <a href="#" class="text-gray-300 hover:text-white transition-colors">
                             <i class="fab fa-instagram"></i>
@@ -596,8 +1119,10 @@
                     <ul class="space-y-2 text-gray-300">
                         <li><a href="#services" class="hover:text-white transition-colors">Web Development</a></li>
                         <li><a href="#services" class="hover:text-white transition-colors">SEO</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Social Media Marketing</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Performance Marketing</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Social Media Marketing</a>
+                        </li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Performance Marketing</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -615,7 +1140,8 @@
             <div class="border-t border-gray-700 mt-8 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <p class="text-gray-300 mb-4 md:mb-0">
-                        &copy; <span id="current-year"></span> Dizealital. All rights reserved. | Designed with ❤️ for digital success.
+                        &copy; <span id="current-year"></span> Dizealital. All rights reserved. | Designed with ❤️ for
+                        digital success.
                     </p>
                     <div class="flex space-x-6 text-gray-300">
                         <a href="#terms" class="hover:text-white transition-colors">Terms & Conditions</a>
@@ -627,18 +1153,36 @@
     </footer>
 
     <script>
-        // Set current year automatically
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+        // Typing animation for the brand name
+        const brandName = "Dizealital";
+        let index = 0;
+        let isDeleting = false;
+        const typingElement = document.querySelector('.typing-animation');
 
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+        function typeEffect() {
+            if (isDeleting) {
+                typingElement.textContent = brandName.substring(0, index - 1);
+                index--;
+            } else {
+                typingElement.textContent = brandName.substring(0, index + 1);
+                index++;
+            }
 
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            if (!isDeleting && index === brandName.length) {
+                setTimeout(() => isDeleting = true, 2000);
+            } else if (isDeleting && index === 0) {
+                isDeleting = false;
+            }
+
+            setTimeout(typeEffect, isDeleting ? 100 : 200);
+        }
+
+        // Start typing effect after page load
+        window.addEventListener('load', () => {
+            setTimeout(typeEffect, 1000);
         });
 
-        // Smooth scrolling for navigation links
+        // Smooth scroll for navigation links and CTA buttons
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -648,47 +1192,27 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
-                    // Close mobile menu if open
+                }
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
                     mobileMenu.classList.add('hidden');
                 }
             });
         });
 
-        // Service card hover effects
-        document.querySelectorAll('.service-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-5px)';
+        // Parallax effect for floating elements
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.animate-float');
+            parallaxElements.forEach(element => {
+                const speed = 0.5;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
             });
-
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-            });
-        });
-
-        // Contact form submission
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Get form data
-            const formData = new FormData(this);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const service = formData.get('service');
-            const message = formData.get('message');
-
-            // Simple validation
-            if (!name || !email || !message) {
-                alert('Please fill in all required fields.');
-                return;
-            }
-
-            // Simulate form submission
-            alert(`Thank you, ${name}! Your message has been sent. We'll get back to you soon.`);
-            this.reset();
         });
 
         // Add scroll effect to navigation
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const nav = document.querySelector('nav');
             if (window.scrollY > 100) {
                 nav.classList.add('bg-white/95', 'backdrop-blur-sm');
@@ -697,13 +1221,31 @@
             }
         });
 
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Service card hover effects
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-5px)';
+            });
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
         // Animate elements on scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
-
-        const observer = new IntersectionObserver(function(entries) {
+        const observer = new IntersectionObserver(function (entries) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.style.opacity = '1';
@@ -711,7 +1253,6 @@
                 }
             });
         }, observerOptions);
-
         // Observe service cards for animation
         document.querySelectorAll('.service-card').forEach(card => {
             card.style.opacity = '0';
@@ -719,13 +1260,54 @@
             card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(card);
         });
-
-        // Add fade-in animation to hero
-        const heroTitle = document.querySelector('.animate-fade-in');
-        if (heroTitle) {
-            heroTitle.style.animation = 'fadeIn 1s ease-in-out';
-        }
-
+        // Observe contact cards for animation
+        document.querySelectorAll('.contact-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+        // Add floating animation to shapes
+        document.querySelectorAll('.shape').forEach((shape, index) => {
+            shape.style.animationDelay = `${index * 2}s`;
+        });
+        // Set current year automatically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        // Contact form submission (single handler, no duplicate)
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const button = this.querySelector('button[type="submit"]');
+            const originalText = button.innerHTML;
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const service = formData.get('service');
+            const message = formData.get('message');
+            // Simple validation
+            if (!name || !email || !message) {
+                alert('Please fill in all required fields.');
+                button.innerHTML = originalText;
+                button.disabled = false;
+                return;
+            }
+            // Show loading state
+            button.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+            button.disabled = true;
+            // Simulate form submission
+            setTimeout(() => {
+                button.innerHTML = '<i class="fas fa-check mr-2"></i>Message Sent!';
+                button.classList.add('bg-green-500', 'hover:bg-green-600');
+                alert(`Thank you, ${name}! Your message has been sent. We'll get back to you soon.`);
+                // Reset after 3 seconds
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                    button.classList.remove('bg-green-500', 'hover:bg-green-600');
+                    this.reset();
+                }, 3000);
+            }, 2000);
+        });
         // Add CSS animation keyframes
         const style = document.createElement('style');
         style.textContent = `
@@ -733,15 +1315,12 @@
                 from { opacity: 0; transform: translateY(30px); }
                 to { opacity: 1; transform: translateY(0); }
             }
-
             .service-card {
                 transition: all 0.3s ease;
             }
-
             .nav-link, .mobile-nav-link {
                 position: relative;
             }
-
             .nav-link:hover::after, .mobile-nav-link:hover::after {
                 content: '';
                 position: absolute;
@@ -756,4 +1335,5 @@
         document.head.appendChild(style);
     </script>
 </body>
+
 </html>
