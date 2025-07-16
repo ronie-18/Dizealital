@@ -137,7 +137,7 @@
                     </p>
 
                     <!-- Stats -->
-                    <div class="grid grid-cols-3 gap-6 mb-10 animate-slide-up">
+                    <!-- <div class="grid grid-cols-3 gap-6 mb-10 animate-slide-up">
                         <div class="text-center stats-counter">
                             <div class="text-2xl font-bold text-accent">500+</div>
                             <div class="text-sm opacity-80">Happy Clients</div>
@@ -150,7 +150,7 @@
                             <div class="text-2xl font-bold text-accent">24/7</div>
                             <div class="text-sm opacity-80">Support</div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4 animate-slide-up">
@@ -550,7 +550,7 @@
                     </p>
 
                     <!-- Stats Grid with enhanced styling -->
-                    <div class="grid grid-cols-2 gap-6 mt-8">
+                    <!-- <div class="grid grid-cols-2 gap-6 mt-8">
                         <div class="text-center bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                             <div class="text-3xl font-bold text-primary mb-2">100+</div>
                             <div class="text-gray-600 font-medium">Happy Clients</div>
@@ -567,7 +567,7 @@
                             <div class="text-3xl font-bold text-primary mb-2">24/7</div>
                             <div class="text-gray-600 font-medium">Support</div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!-- Enhanced SVG Illustration -->
@@ -728,10 +728,10 @@
                     <p class="text-gray-600 text-sm mb-4">Digital marketing strategist with 10+ years of experience</p>
                     <div class="flex justify-center space-x-3">
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors">
-                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-linkedin fa-lg"></i>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors">
-                            <i class="fab fa-x-twitter"></i>
+                            <i class="fab fa-x-twitter fa-lg"></i>
                         </a>
                     </div>
                 </div>
@@ -749,10 +749,10 @@
                     <p class="text-gray-600 text-sm mb-4">Expert in brand design and creative campaigns</p>
                     <div class="flex justify-center space-x-3">
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors">
-                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-linkedin fa-lg"></i>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors">
-                            <i class="fab fa-dribbble"></i>
+                            <i class="fab fa-facebook fa-lg"></i>
                         </a>
                     </div>
                 </div>
@@ -770,10 +770,10 @@
                     <p class="text-gray-600 text-sm mb-4">Technical SEO expert and content optimization guru</p>
                     <div class="flex justify-center space-x-3">
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors">
-                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-linkedin fa-lg"></i>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors">
-                            <i class="fab fa-github"></i>
+                            <i class="fab fa-github fa-lg"></i>
                         </a>
                     </div>
                 </div>
@@ -791,10 +791,10 @@
                     <p class="text-gray-600 text-sm mb-4">Social media strategist and community engagement expert</p>
                     <div class="flex justify-center space-x-3">
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors">
-                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-linkedin fa-lg"></i>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors">
-                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-instagram fa-lg"></i>
                         </a>
                     </div>
                 </div>
@@ -1038,9 +1038,16 @@
                     <div class="relative">
                         <div
                             class="bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 rounded-2xl p-8 text-white text-center shadow-2xl contact-card">
-                            <div class="animate-float">
-                                <i class="fas fa-rocket text-6xl mb-4"></i>
-                            </div>
+                            <div class="mb-4 text-6xl" style="animation: float 3s ease-in-out infinite;">
+                                <style>
+                                  @keyframes float {
+                                    0%, 100% { transform: translateY(0); }
+                                    50% { transform: translateY(-10px); }
+                                  }
+                                </style>
+                                <i class="fas fa-rocket"></i>
+                              </div>
+
                             <h4 class="text-2xl font-bold mb-2">Ready for Takeoff?</h4>
                             <p class="opacity-90">Let's launch your project into the digital stratosphere!</p>
                         </div>
@@ -1100,16 +1107,16 @@
                     </p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-300 hover:text-white transition-colors">
-                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-facebook fa-lg"></i>
                         </a>
                         <a href="#" class="text-gray-300 hover:text-white transition-colors">
-                            <i class="fab fa-x-twitter"></i>
+                            <i class="fab fa-x-twitter fa-lg"></i>
                         </a>
                         <a href="#" class="text-gray-300 hover:text-white transition-colors">
-                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-instagram fa-lg"></i>
                         </a>
                         <a href="#" class="text-gray-300 hover:text-white transition-colors">
-                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-linkedin fa-lg"></i>
                         </a>
                     </div>
                 </div>
@@ -1132,6 +1139,7 @@
                         <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
                         <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
                         <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#team" class="hover:text-white transition-colors">Our Team</a></li>
                         <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
                     </ul>
                 </div>
@@ -1144,13 +1152,89 @@
                         digital success.
                     </p>
                     <div class="flex space-x-6 text-gray-300">
-                        <a href="#terms" class="hover:text-white transition-colors">Terms & Conditions</a>
-                        <a href="#privacy" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <!-- <a href="#terms" class="hover:text-white transition-colors">Terms & Conditions</a> -->
+                        <!-- <a href="#privacy" class="hover:text-white transition-colors">Privacy Policy</a> -->
+                        <!-- Add Terms Modal Trigger Button -->
+                        <button id="termsButton" class="ml-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-1 px-4 rounded transition duration-300">View Terms and Conditions</button>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Terms & Conditions Modal (hidden by default) -->
+    <div id="termsModal" class="fixed inset-0 modal-overlay z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-lg shadow-2xl modal-content fade-in max-w-4xl w-full">
+            <div class="flex items-center justify-between p-6 border-b border-gray-200">
+                <h2 class="text-3xl font-bold text-gray-900">Terms of Service</h2>
+                <button id="closeModal" class="text-gray-400 hover:text-gray-600 transition-colors duration-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="prose max-w-none text-gray-700">
+                    <ol class="list-decimal pl-6 space-y-4">
+                        <li><strong>Introduction</strong><br>Welcome to Dizealital, a digital service platform providing Services like:-<br>1) Web Development<br>2) Search Engine Optimisation (SEO)<br>3) Facebook ads<br>4) Instagram ads<br>5) Email Marketing<br>6) Social Media Marketing (SMM)<br>7) Performance Marketing<br>8) Content Marketing.<br>By accessing or using our website or services, you agree to these Terms of Service.</li>
+                        <li><strong>Definitions</strong><br>- "We" or "Us" refers to [Your Company Name].<br>- "You" or "User" refers to anyone accessing or using our website or services.<br>- "Services" refers to the digital services provided by us.</li>
+                        <li><strong>Use of Services</strong><br>- You must be at least 18 years old to use our services.<br>- You agree to use our services for lawful purposes only.<br>- You're responsible for maintaining the confidentiality of your account information.</li>
+                        <li><strong>Intellectual Property</strong><br>- Our website and services, including content, logos, and trademarks, are owned by us or our licensors.<br>- You may not reproduce, distribute, or modify our content without permission.</li>
+                        <li><strong>Payment and Refund</strong><br>- Our payment terms are as follows: [insert payment terms].<br>- Refunds are handled according to our refund policy: [insert refund policy].</li>
+                        <li><strong>Data Privacy</strong><br>- Our Privacy Policy explains how we collect, use, and protect your personal data.<br>- You agree to our Privacy Policy by using our services.</li>
+                        <li><strong>Liability and Disclaimer</strong><br>- We strive to provide accurate and reliable services, but we make no warranties or representations.<br>- We're not liable for damages or losses resulting from our services, except as required by law.</li>
+                        <li><strong>Termination</strong><br>- We reserve the right to terminate or suspend your access to our services without notice.<br>- Upon termination, your rights to use our services cease immediately.</li>
+                        <li><strong>Changes to Terms</strong><br>- We may update these Terms of Service at any time without notice.<br>- Your continued use of our services implies acceptance of the updated terms.</li>
+                        <li><strong>Governing Law</strong><br>- These Terms of Service are governed by and construed in accordance with the laws of Your Country/State.<br>- Any disputes arising from these terms will be resolved through insert dispute resolution process.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="flex justify-end p-6 border-t border-gray-200">
+                <button id="acceptTerms" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-md mr-3 transition duration-300">Accept Terms</button>
+                <button id="closeModalFooter" class="bg-gray-300 hover:bg-gray-400 text-gray-700 font-semibold py-2 px-4 rounded-md transition duration-300">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal CSS -->
+    <style>
+        .modal-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+        }
+        .modal-content {
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        .modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+        .modal-content::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+        .modal-content::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        .modal-content::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        .fade-in {
+            animation: fadeIn 0.3s ease-out;
+        }
+        .fade-out {
+            animation: fadeOut 0.3s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes fadeOut {
+            from { opacity: 1; transform: scale(1); }
+            to { opacity: 0; transform: scale(0.9); }
+        }
+    </style>
 
     <script>
         // Typing animation for the brand name
@@ -1333,6 +1417,50 @@
             }
         `;
         document.head.appendChild(style);
+
+        // Modal logic for Terms & Conditions
+        const termsButton = document.getElementById('termsButton');
+        const termsModal = document.getElementById('termsModal');
+        const closeModal = document.getElementById('closeModal');
+        const closeModalFooter = document.getElementById('closeModalFooter');
+        const acceptTerms = document.getElementById('acceptTerms');
+        const modalContent = termsModal ? termsModal.querySelector('.bg-white') : null;
+
+        function openModal() {
+            termsModal.classList.remove('hidden');
+            if (modalContent) {
+                modalContent.classList.remove('fade-out');
+                modalContent.classList.add('fade-in');
+            }
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModalFunction() {
+            if (modalContent) {
+                modalContent.classList.remove('fade-in');
+                modalContent.classList.add('fade-out');
+            }
+            setTimeout(() => {
+                termsModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+        if (termsButton) termsButton.addEventListener('click', openModal);
+        if (closeModal) closeModal.addEventListener('click', closeModalFunction);
+        if (closeModalFooter) closeModalFooter.addEventListener('click', closeModalFunction);
+        if (acceptTerms) acceptTerms.addEventListener('click', function() {
+            alert('Terms accepted! Thank you.');
+            closeModalFunction();
+        });
+        if (termsModal) termsModal.addEventListener('click', function(e) {
+            if (e.target === termsModal) {
+                closeModalFunction();
+            }
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && termsModal && !termsModal.classList.contains('hidden')) {
+                closeModalFunction();
+            }
+        });
     </script>
 </body>
 
