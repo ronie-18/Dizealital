@@ -7,19 +7,22 @@
     <title>Dizealital - Digital Marketing Company</title>
     <meta name="description"
         content="Dizealital - To digitally serve our clients in the best way possible. Web Development, SEO, Social Media Marketing, and more.">
-    <meta name="keywords" content="Digital Marketing, Web Development, SEO, Social Media Marketing, Facebook Ads, Instagram Ads, Email Marketing, Performance Marketing, Content Marketing, Kolkata, India, Dizealital">
+    <meta name="keywords"
+        content="Digital Marketing, Web Development, SEO, Social Media Marketing, Facebook Ads, Instagram Ads, Email Marketing, Performance Marketing, Content Marketing, Kolkata, India, Dizealital">
     <link rel="canonical" href="https://www.dizealital.com/">
     <meta name="robots" content="index, follow">
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Dizealital - Digital Marketing Company">
-    <meta property="og:description" content="Dizealital - To digitally serve our clients in the best way possible. Web Development, SEO, Social Media Marketing, and more.">
+    <meta property="og:description"
+        content="Dizealital - To digitally serve our clients in the best way possible. Web Development, SEO, Social Media Marketing, and more.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.dizealital.com/">
     <meta property="og:image" content="https://www.dizealital.com/Logo.png">
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Dizealital - Digital Marketing Company">
-    <meta name="twitter:description" content="Dizealital - To digitally serve our clients in the best way possible. Web Development, SEO, Social Media Marketing, and more.">
+    <meta name="twitter:description"
+        content="Dizealital - To digitally serve our clients in the best way possible. Web Development, SEO, Social Media Marketing, and more.">
     <meta name="twitter:image" content="https://www.dizealital.com/Logo.png">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="Logo.png">
@@ -76,6 +79,32 @@
             }
         }
     </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #00CED1 0%, #20B2AA 50%, #008B8B 100%);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #F59E0B, #F97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-button {
+            transition: all 0.3s ease;
+        }
+
+        .hero-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
 </head>
 
 <body class="bg-gray-50">
@@ -86,7 +115,7 @@
                 <div class="flex items-center">
                     <div class="flex-shrink-0 flex items-center">
                         <img src="Logo.png" alt="Dizealital Company Logo" class="h-10 w-10 mr-3">
-                        <h1 class="text-2xl font-bold text-primary">Dizealital</h1>
+                        <a href="#home"><h1 class="text-2xl font-bold text-primary">Dizealital</h1></a>
                     </div>
                 </div>
 
@@ -100,7 +129,8 @@
                         <a href="#about"
                             class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
                         <a href="#team"
-                            class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Our Team</a>
+                            class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Our
+                            Team</a>
                         <a href="#contact"
                             class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
                     </div>
@@ -131,99 +161,56 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home"
-        class="min-h-screen pt-16 bg-gradient-to-br from-primary via-secondary to-purple-900 text-white relative overflow-hidden">
-        <!-- Animated Background Particles -->
-        <div class="floating-particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
 
+    <section id="home" class="min-h-screen pt-16 gradient-bg text-white relative">
         <!-- Background Overlay -->
-        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
-
-        <!-- Geometric Background Elements -->
-        <div class="absolute inset-0 overflow-hidden">
-            <div
-                class="absolute top-20 left-20 w-32 h-32 bg-gradient-to-r from-accent to-yellow-400 rounded-full opacity-10 animate-float">
-            </div>
-            <div
-                class="absolute bottom-20 right-20 w-48 h-48 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full opacity-10 animate-bounce-slow">
-            </div>
-            <div
-                class="absolute top-1/2 left-10 w-24 h-24 bg-gradient-to-r from-blue-400 to-indigo-400 transform rotate-45 opacity-15 animate-rotate-slow">
-            </div>
-        </div>
+        <div class="absolute inset-0 bg-black bg-opacity-10"></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[70vh]">
                 <!-- Left Content -->
-                <div class="text-center lg:text-left space-y-8">
+                <div class="text-center lg:text-left space-y-6">
                     <!-- Welcome Badge -->
-                    <div
-                        class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 animate-fade-in">
-                        <span class="w-2 h-2 bg-green-400 rounded-full mr-3 animate-pulse"></span>
-                        <span class="text-sm font-medium">Welcome to the Future of Digital Marketing</span>
+                    <div class="inline-flex items-center px-4 py-2 glass-effect rounded-full">
+                        <span class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                        <span class="text-sm">Welcome to Digital Marketing</span>
                     </div>
 
                     <!-- Main Heading -->
-                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in">
+                    <h1 class="text-5xl md:text-6xl font-bold leading-tight">
                         Welcome to <br>
-                        <span class="gradient-text typing-animation">Dizealital</span>
+                        <span class="gradient-text">Dizealital</span>
                     </h1>
 
                     <!-- Subtitle -->
-                    <p class="text-xl md:text-2xl mb-8 opacity-90 animate-slide-up font-light">
-                        To digitally serve our clients in the <span class="text-accent font-semibold">best way
+                    <p class="text-xl md:text-2xl opacity-90">
+                        To digitally serve our clients in the <span class="text-yellow-400 font-semibold">best way
                             possible</span>
                     </p>
 
                     <!-- Description -->
-                    <p class="text-lg mb-10 opacity-80 leading-relaxed animate-slide-up max-w-2xl">
-                        Your trusted partner for comprehensive digital marketing solutions that drive growth,
-                        maximize your online presence, and transform your business into a digital powerhouse.
+                    <p class="text-lg opacity-80 leading-relaxed max-w-xl">
+                        Your trusted partner for comprehensive digital marketing solutions that drive growth and
+                        maximize your online presence.
                     </p>
 
-                    <!-- Stats (Restored & Updated) -->
-                    <!-- <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-10 animate-slide-up">
-                        <div class="text-center stats-counter">
-                            <div class="text-2xl md:text-3xl font-bold text-accent">100+</div>
-                            <div class="text-sm opacity-80">Happy Clients</div>
-                        </div>
-                        <div class="text-center stats-counter">
-                            <div class="text-2xl md:text-3xl font-bold text-accent">500+</div>
-                            <div class="text-sm opacity-80">Projects Completed</div>
-                        </div>
-                        <div class="text-center stats-counter">
-                            <div class="text-2xl md:text-3xl font-bold text-accent">5+</div>
-                            <div class="text-sm opacity-80">Years Experience</div>
-                        </div>
-                        <div class="text-center stats-counter">
-                            <div class="text-2xl md:text-3xl font-bold text-accent">24/7</div>
-                            <div class="text-sm opacity-80">Support</div>
-                        </div>
-                    </div> -->
-
                     <!-- CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-4 animate-slide-up">
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
                         <a href="#services"
-                            class="hero-button bg-accent hover:bg-yellow-500 text-gray-900 font-bold py-4 px-8 rounded-xl transition-all duration-300 inline-flex items-center justify-center group transform hover:scale-105 animate-pulse-glow">
-                            <i class="fas fa-rocket mr-2 group-hover:animate-bounce"></i>
+                            class="hero-button bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold py-3 px-8 rounded-lg inline-flex items-center justify-center">
+                            <i class="fas fa-rocket mr-2"></i>
                             Our Services
                         </a>
                         <a href="#contact"
-                            class="hero-button glass-effect hover:bg-white hover:text-primary text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 inline-flex items-center justify-center group transform hover:scale-105">
-                            <i class="fas fa-paper-plane mr-2 group-hover:animate-bounce"></i>
+                            class="hero-button glass-effect hover:bg-white hover:text-gray-900 font-semibold py-3 px-8 rounded-lg inline-flex items-center justify-center">
+                            <i class="fas fa-paper-plane mr-2"></i>
                             Get Started
                         </a>
                     </div>
 
                     <!-- Social Proof -->
-                    <div class="flex items-center justify-center lg:justify-start space-x-6 pt-8 animate-slide-up">
-                        <div class="text-sm opacity-80">Trusted by:</div>
+                    <div class="flex items-center justify-center lg:justify-start space-x-6 pt-6">
+                        <span class="text-sm opacity-80">Trusted by:</span>
                         <div class="flex space-x-4">
                             <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
                                 <i class="fab fa-google text-sm"></i>
@@ -238,161 +225,116 @@
                     </div>
                 </div>
 
-                <!-- Right Content - Custom SVG Illustration -->
-                <div class="hidden lg:block animate-float">
-                    <div class="relative">
-                        <svg viewBox="0 0 600 500" class="w-full h-auto drop-shadow-2xl">
+                <!-- Right Content - Digital Marketing Illustration -->
+                <div class="hidden lg:block">
+                    <div class="relative w-full max-w-lg mx-auto">
+                        <svg viewBox="0 0 500 400" class="w-full h-auto">
                             <!-- Background Circle -->
-                            <circle cx="300" cy="250" r="200" fill="url(#bgGradient)" opacity="0.1" />
+                            <circle cx="250" cy="200" r="180" fill="rgba(255,255,255,0.1)"
+                                stroke="rgba(255,255,255,0.2)" stroke-width="2" />
 
-                            <!-- Laptop Base -->
-                            <rect x="150" y="200" width="300" height="200" rx="20" fill="url(#laptopGradient)"
-                                stroke="#4F46E5" stroke-width="2" />
-
-                            <!-- Laptop Screen -->
-                            <rect x="170" y="150" width="260" height="160" rx="15" fill="url(#screenGradient)"
-                                stroke="#6366F1" stroke-width="2" />
+                            <!-- Central Device (Laptop) -->
+                            <rect x="180" y="150" width="140" height="90" rx="8" fill="#2D3748" stroke="#4A5568"
+                                stroke-width="2" />
+                            <rect x="190" y="160" width="120" height="70" rx="4" fill="#1A202C" />
 
                             <!-- Screen Content -->
-                            <rect x="180" y="160" width="240" height="20" rx="10" fill="#10B981" opacity="0.8" />
-                            <rect x="180" y="190" width="180" height="15" rx="7" fill="#F59E0B" opacity="0.7" />
-                            <rect x="180" y="215" width="200" height="15" rx="7" fill="#EF4444" opacity="0.7" />
-                            <rect x="180" y="240" width="160" height="15" rx="7" fill="#8B5CF6" opacity="0.7" />
+                            <rect x="195" y="165" width="110" height="8" rx="4" fill="#00CED1" />
+                            <rect x="195" y="178" width="80" height="6" rx="3" fill="#48BB78" />
+                            <rect x="195" y="188" width="90" height="6" rx="3" fill="#ED8936" />
+                            <rect x="195" y="198" width="70" height="6" rx="3" fill="#9F7AEA" />
 
-                            <!-- Chart on Screen -->
-                            <rect x="280" y="180" width="130" height="80" rx="5" fill="rgba(255,255,255,0.1)"
-                                stroke="rgba(255,255,255,0.3)" stroke-width="1" />
-                            <polyline points="290,240 310,220 330,200 350,180 370,160 390,140" fill="none"
-                                stroke="#10B981" stroke-width="3" />
-                            <circle cx="310" cy="220" r="3" fill="#10B981" />
-                            <circle cx="330" cy="200" r="3" fill="#10B981" />
-                            <circle cx="350" cy="180" r="3" fill="#10B981" />
-                            <circle cx="370" cy="160" r="3" fill="#10B981" />
+                            <!-- Mini Chart on Screen -->
+                            <rect x="280" y="175" width="20" height="25" rx="2" fill="rgba(0,206,209,0.2)" />
+                            <polyline points="285,195 290,185 295,180 300,175" fill="none" stroke="#00CED1"
+                                stroke-width="2" />
 
-                            <!-- Floating Icons -->
-                            <g class="animate-bounce-slow">
-                                <circle cx="100" cy="100" r="30" fill="url(#iconGradient1)" />
-                                <path d="M85 100 L100 85 L115 100 L100 115 Z" fill="white" />
-                            </g>
+                            <!-- Social Media Icons Around -->
+                            <!-- Facebook -->
+                            <circle cx="120" cy="100" r="25" fill="#1877F2" />
+                            <rect x="110" y="90" width="20" height="20" rx="3" fill="white" />
+                            <rect x="113" y="93" width="14" height="4" fill="#1877F2" />
+                            <rect x="113" y="99" width="14" height="4" fill="#1877F2" />
+                            <rect x="113" y="105" width="10" height="2" fill="#1877F2" />
 
-                            <g class="animate-float" style="animation-delay: 2s;">
-                                <circle cx="500" cy="120" r="25" fill="url(#iconGradient2)" />
-                                <rect x="490" y="110" width="20" height="20" rx="3" fill="white" />
-                            </g>
+                            <!-- Instagram -->
+                            <circle cx="380" cy="80" r="25" fill="#E4405F" />
+                            <rect x="365" y="65" width="30" height="30" rx="8" fill="white" />
+                            <rect x="370" y="70" width="20" height="20" rx="6" fill="#E4405F" />
+                            <circle cx="380" cy="80" r="6" fill="white" />
+                            <circle cx="385" cy="75" r="2" fill="white" />
 
-                            <g class="animate-bounce-slow" style="animation-delay: 4s;">
-                                <circle cx="520" cy="350" r="35" fill="url(#iconGradient3)" />
-                                <circle cx="520" cy="350" r="15" fill="none" stroke="white" stroke-width="3" />
-                                <circle cx="520" cy="350" r="5" fill="white" />
-                            </g>
+                            <!-- YouTube -->
+                            <circle cx="100" cy="300" r="25" fill="#FF0000" />
+                            <polygon points="90,290 90,310 110,300" fill="white" />
 
-                            <g class="animate-float" style="animation-delay: 6s;">
-                                <circle cx="80" cy="350" r="28" fill="url(#iconGradient4)" />
-                                <path d="M65 350 Q80 335 95 350 Q80 365 65 350" fill="white" />
-                            </g>
+                            <!-- LinkedIn -->
+                            <circle cx="400" cy="320" r="25" fill="#0A66C2" />
+                            <rect x="390" y="310" width="20" height="20" rx="3" fill="white" />
+                            <rect x="393" y="313" width="6" height="14" fill="#0A66C2" />
+                            <rect x="401" y="318" width="12" height="9" fill="#0A66C2" />
+                            <rect x="401" y="313" width="4" height="4" fill="#0A66C2" />
 
                             <!-- Growth Arrow -->
-                            <g class="animate-scale-pulse">
-                                <path d="M400 300 L480 220" stroke="#10B981" stroke-width="4"
-                                    marker-end="url(#arrowhead)" />
-                                <text x="440" y="250" fill="#10B981" font-size="14" font-weight="bold">Growth</text>
+                            <path d="M 320 250 Q 350 220 380 200" fill="none" stroke="#00CED1" stroke-width="4"
+                                marker-end="url(#arrowhead)" />
+                            <text x="340" y="230" fill="#00CED1" font-size="14" font-weight="bold">Growth</text>
+
+                            <!-- Analytics Chart -->
+                            <g transform="translate(50, 220)">
+                                <rect x="0" y="40" width="8" height="20" fill="#48BB78" rx="2" />
+                                <rect x="12" y="35" width="8" height="25" fill="#00CED1" rx="2" />
+                                <rect x="24" y="30" width="8" height="30" fill="#ED8936" rx="2" />
+                                <rect x="36" y="25" width="8" height="35" fill="#9F7AEA" rx="2" />
+                                <rect x="48" y="20" width="8" height="40" fill="#F56565" rx="2" />
+                                <text x="0" y="75" fill="white" font-size="10">Analytics</text>
                             </g>
 
-                            <!-- Social Media Icons -->
-                            <g class="animate-float" style="animation-delay: 1s;">
-                                <circle cx="450" cy="80" r="20" fill="#1877F2" />
-                                <text x="443" y="87" fill="white" font-size="16" font-weight="bold">f</text>
-                            </g>
+                            <!-- SEO Icon -->
+                            <circle cx="350" cy="140" r="20" fill="#48BB78" />
+                            <circle cx="350" cy="140" r="12" fill="none" stroke="white" stroke-width="2" />
+                            <path d="M 360 130 L 365 125" stroke="white" stroke-width="2" stroke-linecap="round" />
+                            <text x="330" y="175" fill="white" font-size="10">SEO</text>
 
-                            <g class="animate-bounce-slow" style="animation-delay: 3s;">
-                                <circle cx="150" cy="80" r="18" fill="#E4405F" />
-                                <rect x="142" y="72" width="16" height="16" rx="4" fill="white" />
-                                <circle cx="150" cy="80" r="4" fill="#E4405F" />
-                            </g>
+                            <!-- Email Marketing -->
+                            <circle cx="150" cy="60" r="20" fill="#ED8936" />
+                            <rect x="140" y="52" width="20" height="16" rx="3" fill="white" />
+                            <path d="M 140 52 L 150 60 L 160 52" fill="none" stroke="#ED8936" stroke-width="2" />
+                            <text x="130" y="95" fill="white" font-size="10">Email</text>
 
-                            <!-- Data Visualization -->
-                            <g class="animate-scale-pulse" style="animation-delay: 2s;">
-                                <rect x="50" y="250" width="15" height="40" fill="#F59E0B" />
-                                <rect x="70" y="230" width="15" height="60" fill="#10B981" />
-                                <rect x="90" y="210" width="15" height="80" fill="#8B5CF6" />
-                                <rect x="110" y="190" width="15" height="100" fill="#EF4444" />
-                            </g>
+                            <!-- PPC/Ads Icon -->
+                            <circle cx="180" cy="330" r="20" fill="#9F7AEA" />
+                            <rect x="170" y="322" width="20" height="16" rx="3" fill="white" />
+                            <circle cx="180" cy="330" r="6" fill="#9F7AEA" />
+                            <text x="160" y="360" fill="white" font-size="10">PPC Ads</text>
 
-                            <!-- Definitions -->
+                            <!-- Content Marketing -->
+                            <circle cx="320" cy="320" r="20" fill="#F56565" />
+                            <rect x="312" y="315" width="16" height="2" fill="white" />
+                            <rect x="312" y="320" width="12" height="2" fill="white" />
+                            <rect x="312" y="325" width="14" height="2" fill="white" />
+                            <text x="295" y="350" fill="white" font-size="10">Content</text>
+
+                            <!-- Connection Lines -->
+                            <path d="M 145 100 Q 200 120 180 150" fill="none" stroke="rgba(255,255,255,0.3)"
+                                stroke-width="1" stroke-dasharray="3,3" />
+                            <path d="M 355 80 Q 320 110 320 150" fill="none" stroke="rgba(255,255,255,0.3)"
+                                stroke-width="1" stroke-dasharray="3,3" />
+                            <path d="M 125 300 Q 160 270 180 240" fill="none" stroke="rgba(255,255,255,0.3)"
+                                stroke-width="1" stroke-dasharray="3,3" />
+                            <path d="M 375 320 Q 340 290 320 240" fill="none" stroke="rgba(255,255,255,0.3)"
+                                stroke-width="1" stroke-dasharray="3,3" />
+
+                            <!-- Arrow marker definition -->
                             <defs>
-                                <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-                                </linearGradient>
-
-                                <linearGradient id="laptopGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#374151;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#1F2937;stop-opacity:1" />
-                                </linearGradient>
-
-                                <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#1F2937;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#111827;stop-opacity:1" />
-                                </linearGradient>
-
-                                <linearGradient id="iconGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
-                                </linearGradient>
-
-                                <linearGradient id="iconGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
-                                </linearGradient>
-
-                                <linearGradient id="iconGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
-                                </linearGradient>
-
-                                <linearGradient id="iconGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
-                                </linearGradient>
-
                                 <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5"
                                     orient="auto">
-                                    <polygon points="0 0, 10 3.5, 0 7" fill="#10B981" />
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="#00CED1" />
                                 </marker>
                             </defs>
                         </svg>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-                <div class="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Client Logos Section -->
-    <section class="py-12 bg-white border-b">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8">
-                <p class="text-gray-600 font-medium">Trusted by leading companies</p>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-60">
-                <img src="/placeholder.svg?height=60&width=120" alt="Client: TechStart Inc. Logo"
-                    class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
-                <img src="/placeholder.svg?height=60&width=120" alt="Client: Fashion Hub Logo"
-                    class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
-                <img src="/placeholder.svg?height=60&width=120" alt="Client: Local Eats Logo"
-                    class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
-                <img src="/placeholder.svg?height=60&width=120" alt="Client: Example Company 4 Logo"
-                    class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
-                <img src="/placeholder.svg?height=60&width=120" alt="Client: Example Company 5 Logo"
-                    class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
-                <img src="/placeholder.svg?height=60&width=120" alt="Client: Example Company 6 Logo"
-                    class="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all">
             </div>
         </div>
     </section>
@@ -423,7 +365,8 @@
                             <i class="fas fa-code text-3xl"></i>
                         </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">Web
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">
+                        Web
                         Development</h3>
                     <p class="text-gray-600">Custom websites and web applications built with modern technologies for
                         optimal performance and user experience.</p>
@@ -447,7 +390,8 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">
                         Search Engine Optimisation (SEO)</h3>
-                    <p class="text-gray-600">Improve your website's visibility and ranking on search engines to drive
+                    <p class="text-gray-600">Improve your website's visibility and ranking on search engines to
+                        drive
                         organic traffic and leads.</p>
                 </div>
 
@@ -468,7 +412,8 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">
                         Facebook Ads</h3>
-                    <p class="text-gray-600">Targeted Facebook advertising campaigns to reach your ideal customers and
+                    <p class="text-gray-600">Targeted Facebook advertising campaigns to reach your ideal customers
+                        and
                         maximize your return on investment.</p>
                 </div>
 
@@ -510,7 +455,8 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">
                         Email Marketing</h3>
-                    <p class="text-gray-600">Strategic email campaigns that nurture leads, retain customers, and drive
+                    <p class="text-gray-600">Strategic email campaigns that nurture leads, retain customers, and
+                        drive
                         sales through personalized messaging.</p>
                 </div>
 
@@ -531,7 +477,8 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">
                         Social Media Marketing (SMM)</h3>
-                    <p class="text-gray-600">Comprehensive social media strategies to build brand awareness and engage
+                    <p class="text-gray-600">Comprehensive social media strategies to build brand awareness and
+                        engage
                         with your target audience.</p>
                 </div>
 
@@ -551,7 +498,8 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-3 text-gray-900 group-hover:text-primary transition-colors">
                         Performance Marketing</h3>
-                    <p class="text-gray-600">Data-driven marketing campaigns focused on measurable results and optimized
+                    <p class="text-gray-600">Data-driven marketing campaigns focused on measurable results and
+                        optimized
                         for maximum ROI.</p>
                 </div>
 
@@ -590,7 +538,8 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <!-- Basic Package -->
-                <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center border-t-4 border-primary hover:scale-105 transition-transform">
+                <div
+                    class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center border-t-4 border-primary hover:scale-105 transition-transform">
                     <h3 class="text-xl font-bold text-primary mb-2 tracking-wide">BASIC</h3>
                     <p class="text-gray-700 font-semibold mb-6">Social Media Manager</p>
                     <ul class="text-gray-600 space-y-2 mb-8 text-center">
@@ -601,11 +550,15 @@
                         <li>1 hour Engagement</li>
                         <li>Comment Management</li>
                     </ul>
-                    <div class="text-3xl font-extrabold text-gray-900 mb-2">₹4,999<span class="text-base font-medium text-gray-500">/Month</span></div>
-                    <a href="#contact" class="mt-4 bg-primary text-white font-semibold py-2 px-6 rounded-lg shadow hover:bg-secondary transition-colors">Get Started</a>
+                    <div class="text-3xl font-extrabold text-gray-900 mb-2">₹4,999<span
+                            class="text-base font-medium text-gray-500">/Month</span></div>
+                    <a href="#contact"
+                        class="mt-4 bg-primary text-white font-semibold py-2 px-6 rounded-lg shadow hover:bg-secondary transition-colors">Get
+                        Started</a>
                 </div>
                 <!-- Advanced Package -->
-                <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center border-t-4 border-accent hover:scale-105 transition-transform">
+                <div
+                    class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center border-t-4 border-accent hover:scale-105 transition-transform">
                     <h3 class="text-xl font-bold text-accent mb-2 tracking-wide">ADVANCED</h3>
                     <p class="text-gray-700 font-semibold mb-6">Social Media Manager</p>
                     <ul class="text-gray-600 space-y-2 mb-8 text-center">
@@ -617,11 +570,15 @@
                         <li>DM & Lead Outreach</li>
                         <li>20 connection request everyday</li>
                     </ul>
-                    <div class="text-3xl font-extrabold text-gray-900 mb-2">₹6,499<span class="text-base font-medium text-gray-500">/Month</span></div>
-                    <a href="#contact" class="mt-4 bg-accent text-white font-semibold py-2 px-6 rounded-lg shadow hover:bg-yellow-500 transition-colors">Get Started</a>
+                    <div class="text-3xl font-extrabold text-gray-900 mb-2">₹6,499<span
+                            class="text-base font-medium text-gray-500">/Month</span></div>
+                    <a href="#contact"
+                        class="mt-4 bg-accent text-white font-semibold py-2 px-6 rounded-lg shadow hover:bg-yellow-500 transition-colors">Get
+                        Started</a>
                 </div>
                 <!-- Premium Package -->
-                <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center border-t-4 border-secondary hover:scale-105 transition-transform">
+                <div
+                    class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center border-t-4 border-secondary hover:scale-105 transition-transform">
                     <h3 class="text-xl font-bold text-secondary mb-2 tracking-wide">PREMIUM</h3>
                     <p class="text-gray-700 font-semibold mb-6">Social Media Manager</p>
                     <ul class="text-gray-600 space-y-2 mb-8 text-center">
@@ -633,8 +590,11 @@
                         <li>Comment Management</li>
                         <li>Monthly Strategy Call (60 mins)</li>
                     </ul>
-                    <div class="text-3xl font-extrabold text-gray-900 mb-2">₹8,499<span class="text-base font-medium text-gray-500">/Month</span></div>
-                    <a href="#contact" class="mt-4 bg-secondary text-white font-semibold py-2 px-6 rounded-lg shadow hover:bg-primary transition-colors">Get Started</a>
+                    <div class="text-3xl font-extrabold text-gray-900 mb-2">₹8,499<span
+                            class="text-base font-medium text-gray-500">/Month</span></div>
+                    <a href="#contact"
+                        class="mt-4 bg-secondary text-white font-semibold py-2 px-6 rounded-lg shadow hover:bg-primary transition-colors">Get
+                        Started</a>
                 </div>
             </div>
         </div>
@@ -655,35 +615,18 @@
                     </h2>
                     <p class="text-lg text-gray-600 mb-6 leading-relaxed">
                         At Dizealital, we are passionate about helping businesses succeed in the digital world. Our
-                        mission is simple yet powerful: <strong class="text-gray-900">"To digitally serve our clients in
+                        mission is simple yet powerful: <strong class="text-gray-900">"To digitally serve our
+                            clients in
                             the best way
                             possible."</strong>
                     </p>
                     <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                        We combine creativity, technology, and data-driven strategies to deliver exceptional results for
-                        our clients. Our team of experts specializes in various aspects of digital marketing, ensuring
+                        We combine creativity, technology, and data-driven strategies to deliver exceptional results
+                        for
+                        our clients. Our team of experts specializes in various aspects of digital marketing,
+                        ensuring
                         comprehensive solutions for your business needs.
                     </p>
-
-                    <!-- Stats Grid with enhanced styling (Restored & Updated) -->
-                    <!-- <div class="grid grid-cols-2 gap-6 mt-8">
-                        <div class="text-center bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                            <div class="text-3xl font-bold text-primary mb-2">100+</div>
-                            <div class="text-gray-600 font-medium">Happy Clients</div>
-                        </div>
-                        <div class="text-center bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                            <div class="text-3xl font-bold text-primary mb-2">500+</div>
-                            <div class="text-gray-600 font-medium">Projects Completed</div>
-                        </div>
-                        <div class="text-center bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                            <div class="text-3xl font-bold text-primary mb-2">5+</div>
-                            <div class="text-gray-600 font-medium">Years Experience</div>
-                        </div>
-                        <div class="text-center bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                            <div class="text-3xl font-bold text-primary mb-2">24/7</div>
-                            <div class="text-gray-600 font-medium">Support</div>
-                        </div>
-                    </div> -->
                 </div>
 
                 <!-- Enhanced SVG Illustration -->
@@ -770,7 +713,8 @@
             <div class="mt-20 bg-white p-8 md:p-12 rounded-2xl shadow-xl">
                 <div class="text-center mb-12">
                     <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Why Choose Us?</h3>
-                    <p class="text-gray-600 max-w-2xl mx-auto">We deliver exceptional results through our commitment to
+                    <p class="text-gray-600 max-w-2xl mx-auto">We deliver exceptional results through our commitment
+                        to
                         excellence, innovation, and client satisfaction.</p>
                 </div>
 
@@ -801,7 +745,8 @@
                             <i class="fas fa-cogs text-3xl text-purple-600"></i>
                         </div>
                         <h4 class="font-bold text-gray-900 mb-3 text-lg">Custom Solutions</h4>
-                        <p class="text-gray-600">Tailored strategies designed to meet your specific business goals and
+                        <p class="text-gray-600">Tailored strategies designed to meet your specific business goals
+                            and
                             objectives</p>
                     </div>
 
@@ -811,7 +756,8 @@
                             <i class="fas fa-chart-bar text-3xl text-orange-600"></i>
                         </div>
                         <h4 class="font-bold text-gray-900 mb-3 text-lg">Transparent Reporting</h4>
-                        <p class="text-gray-600">Regular updates and detailed analytics on campaign performance and ROI
+                        <p class="text-gray-600">Regular updates and detailed analytics on campaign performance and
+                            ROI
                         </p>
                     </div>
                 </div>
@@ -840,14 +786,14 @@
                         </div>
                     </div>
                     <h4 class="text-xl font-semibold text-gray-900 mb-1">Soumyadip Naskar</h4>
-                    <p class="text-primary font-medium mb-2">CEO & Founder</p>
-                    <p class="text-gray-600 text-sm mb-4">Digital marketing strategist with 10+ years of experience</p>
                     <div class="flex justify-center space-x-3">
-                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                        <a href="https://www.linkedin.com/in/soumyadeep25-gbs?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            class="text-gray-400 hover:text-primary transition-colors" target="_blank">
                             <i class="fab fa-linkedin fa-lg"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
-                            <i class="fab fa-x-twitter fa-lg"></i>
+                        <a href="https://www.instagram.com/soumyadeepnaskar_official?igsh=MWVjYnM0b2d5OW8yNA=="
+                            class="text-gray-400 hover:text-primary transition-colors" target="_blank">
+                            <i class="fab fa-instagram fa-lg"></i>
                         </a>
                     </div>
                 </div>
@@ -861,35 +807,36 @@
                         </div>
                     </div>
                     <h4 class="text-xl font-semibold text-gray-900 mb-1">Sneha Mitra</h4>
-                    <p class="text-primary font-medium mb-2">Creative Director</p>
-                    <p class="text-gray-600 text-sm mb-4">Expert in brand design and creative campaigns</p>
+                    <!-- <p class="text-primary font-medium mb-2">Creative Director</p>
+                    <p class="text-gray-600 text-sm mb-4">Expert in brand design and creative campaigns</p> -->
                     <div class="flex justify-center space-x-3">
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors">
                             <i class="fab fa-linkedin fa-lg"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
-                            <i class="fab fa-facebook fa-lg"></i>
+                        <a href="https://www.instagram.com/snehamitra1818?utm_source=qr&igsh=MWdocHE3NXd6ajJ3cA=="
+                            class="text-gray-400 hover:text-primary transition-colors" target="_blank">
+                            <i class="fab fa-instagram fa-lg"></i>
                         </a>
                     </div>
                 </div>
 
                 <div class="text-center group">
                     <div class="relative mb-4">
-                        <img src="sattick.jpg" alt="Sattick Kar - SEO Specialist, Dizealital"
+                        <img src="neha.jpg" alt="Sattick Kar - SEO Specialist, Dizealital"
                             class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow">
                         <div
                             class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-10 rounded-full transition-all">
                         </div>
                     </div>
-                    <h4 class="text-xl font-semibold text-gray-900 mb-1">Sattick Kar</h4>
-                    <p class="text-primary font-medium mb-2">SEO Specialist</p>
-                    <p class="text-gray-600 text-sm mb-4">Technical SEO expert and content optimization guru</p>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-1">Neha Jana</h4>
+                    <!-- <p class="text-primary font-medium mb-2">SEO Specialist</p> -->
+                    <!-- <p class="text-gray-600 text-sm mb-4">Technical SEO expert and content optimization guru</p> -->
                     <div class="flex justify-center space-x-3">
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors">
                             <i class="fab fa-linkedin fa-lg"></i>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors">
-                            <i class="fab fa-github fa-lg"></i>
+                            <i class="fab fa-instagram fa-lg"></i>
                         </a>
                     </div>
                 </div>
@@ -903,14 +850,15 @@
                         </div>
                     </div>
                     <h4 class="text-xl font-semibold text-gray-900 mb-1">Rounak Jana</h4>
-                    <p class="text-primary font-medium mb-2">Full Stack Developer & Freelancer</p>
-                    <p class="text-gray-600 text-sm mb-4">Social media strategist and community engagement expert</p>
+                    <!-- <p class="text-primary font-medium mb-2">Full Stack Developer & Freelancer</p> -->
+                    <!-- <p class="text-gray-600 text-sm mb-4">Social media strategist and community engagement expert</p> -->
                     <div class="flex justify-center space-x-3">
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors">
                             <i class="fab fa-linkedin fa-lg"></i>
                         </a>
+
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors">
-                            <i class="fab fa-instagram fa-lg"></i>
+                            <i class="fab fa-github fa-lg"></i>
                         </a>
                     </div>
                 </div>
@@ -924,69 +872,58 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Don't just take our word for it. Here's what our satisfied clients have to say about our services.
+                    Don't just take our word for it. Here's what our satisfied clients have to say about our
+                    services.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <img src="/placeholder.svg?height=60&width=60" alt="Client 1"
-                            class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-semibold text-gray-900">Alex Thompson</h4>
-                            <p class="text-gray-600 text-sm">CEO, TechStart Inc.</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg relative">
+                    <div class="text-7xl text-blue-200 absolute top-4 left-4 font-serif">"</div>
+                    <div class="pt-8">
+                        <div class="flex mb-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
                         </div>
+                        <p class="text-gray-600 mb-4">Dizealital transformed our online presence completely. Our
+                            website traffic increased by 300% and conversions doubled within 6 months!</p>
+                        <h4 class="font-semibold text-gray-900">Alex Thompson</h4>
                     </div>
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                    </div>
-                    <p class="text-gray-600">"Dizealital transformed our online presence completely. Our website traffic
-                        increased by 300% and conversions doubled within 6 months!"</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <img src="/placeholder.svg?height=60&width=60" alt="Client 2"
-                            class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-semibold text-gray-900">Maria Rodriguez</h4>
-                            <p class="text-gray-600 text-sm">Marketing Director, Fashion Hub</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg relative">
+                    <div class="text-7xl text-blue-200 absolute top-4 left-4 font-serif">"</div>
+                    <div class="pt-8">
+                        <div class="flex mb-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
                         </div>
+                        <p class="text-gray-600 mb-4">Their social media campaigns are incredible! Our Instagram
+                            engagement went through the roof and we gained 50K followers in just 3 months.</p>
+                        <h4 class="font-semibold text-gray-900">Maria Rodriguez</h4>
                     </div>
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                    </div>
-                    <p class="text-gray-600">"Their social media campaigns are incredible! Our Instagram engagement went
-                        through the roof and we gained 50K followers in just 3 months."</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <img src="/placeholder.svg?height=60&width=60" alt="Client 3"
-                            class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-semibold text-gray-900">David Kim</h4>
-                            <p class="text-gray-600 text-sm">Founder, Local Eats</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg relative">
+                    <div class="text-7xl text-blue-200 absolute top-4 left-4 font-serif">"</div>
+                    <div class="pt-8">
+                        <div class="flex mb-4">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
                         </div>
+                        <p class="text-gray-600 mb-4">Professional, reliable, and results-driven. Dizealital helped
+                            us achieve our business goals faster than we ever imagined possible.</p>
+                        <h4 class="font-semibold text-gray-900">David Kim</h4>
                     </div>
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                    </div>
-                    <p class="text-gray-600">"Professional, reliable, and results-driven. Dizealital helped us achieve
-                        our business goals faster than we ever imagined possible."</p>
                 </div>
             </div>
         </div>
@@ -1157,13 +1094,20 @@
                             class="bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 rounded-2xl p-8 text-white text-center shadow-2xl contact-card">
                             <div class="mb-4 text-6xl" style="animation: float 3s ease-in-out infinite;">
                                 <style>
-                                  @keyframes float {
-                                    0%, 100% { transform: translateY(0); }
-                                    50% { transform: translateY(-10px); }
-                                  }
+                                    @keyframes float {
+
+                                        0%,
+                                        100% {
+                                            transform: translateY(0);
+                                        }
+
+                                        50% {
+                                            transform: translateY(-10px);
+                                        }
+                                    }
                                 </style>
                                 <i class="fas fa-rocket"></i>
-                              </div>
+                            </div>
 
                             <h4 class="text-2xl font-bold mb-2">Ready for Takeoff?</h4>
                             <p class="opacity-90">Let's launch your project into the digital stratosphere!</p>
@@ -1243,7 +1187,8 @@
                     <ul class="space-y-2 text-gray-300">
                         <li><a href="#services" class="hover:text-white transition-colors">Web Development</a></li>
                         <li><a href="#services" class="hover:text-white transition-colors">SEO</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Social Media Marketing</a>
+                        <li><a href="#services" class="hover:text-white transition-colors">Social Media
+                                Marketing</a>
                         </li>
                         <li><a href="#services" class="hover:text-white transition-colors">Performance Marketing</a>
                         </li>
@@ -1265,14 +1210,17 @@
             <div class="border-t border-gray-700 mt-8 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <p class="text-gray-300 mb-4 md:mb-0">
-                        &copy; <span id="current-year"></span> Dizealital. All rights reserved. | Designed with ❤️ for
+                        &copy; <span id="current-year"></span> Dizealital. All rights reserved. | Designed with ❤️
+                        for
                         digital success.
                     </p>
                     <div class="flex space-x-6 text-gray-300">
                         <!-- <a href="#terms" class="hover:text-white transition-colors">Terms & Conditions</a> -->
                         <!-- <a href="#privacy" class="hover:text-white transition-colors">Privacy Policy</a> -->
                         <!-- Add Terms Modal Trigger Button -->
-                        <button id="termsButton" class="ml-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-1 px-4 rounded transition duration-300">View Terms and Conditions</button>
+                        <button id="termsButton"
+                            class="ml-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-1 px-4 rounded transition duration-300">View
+                            Terms and Conditions</button>
                     </div>
                 </div>
             </div>
@@ -1286,29 +1234,67 @@
                 <h2 class="text-3xl font-bold text-gray-900">Terms of Service</h2>
                 <button id="closeModal" class="text-gray-400 hover:text-gray-600 transition-colors duration-200">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
                     </svg>
                 </button>
             </div>
             <div class="p-6">
                 <div class="prose max-w-none text-gray-700">
                     <ol class="list-decimal pl-6 space-y-4">
-                        <li><strong>Introduction</strong><br>Welcome to Dizealital, a digital service platform providing Services like:-<br>1) Web Development<br>2) Search Engine Optimisation (SEO)<br>3) Facebook ads<br>4) Instagram ads<br>5) Email Marketing<br>6) Social Media Marketing (SMM)<br>7) Performance Marketing<br>8) Content Marketing.<br>By accessing or using our website or services, you agree to these Terms of Service.</li>
-                        <li><strong>Definitions</strong><br>- "We" or "Us" refers to [Your Company Name].<br>- "You" or "User" refers to anyone accessing or using our website or services.<br>- "Services" refers to the digital services provided by us.</li>
-                        <li><strong>Use of Services</strong><br>- You must be at least 18 years old to use our services.<br>- You agree to use our services for lawful purposes only.<br>- You're responsible for maintaining the confidentiality of your account information.</li>
-                        <li><strong>Intellectual Property</strong><br>- Our website and services, including content, logos, and trademarks, are owned by us or our licensors.<br>- You may not reproduce, distribute, or modify our content without permission.</li>
-                        <li><strong>Payment and Refund</strong><br>- Our payment terms are as follows: [insert payment terms].<br>- Refunds are handled according to our refund policy: [insert refund policy].</li>
-                        <li><strong>Data Privacy</strong><br>- Our Privacy Policy explains how we collect, use, and protect your personal data.<br>- You agree to our Privacy Policy by using our services.</li>
-                        <li><strong>Liability and Disclaimer</strong><br>- We strive to provide accurate and reliable services, but we make no warranties or representations.<br>- We're not liable for damages or losses resulting from our services, except as required by law.</li>
-                        <li><strong>Termination</strong><br>- We reserve the right to terminate or suspend your access to our services without notice.<br>- Upon termination, your rights to use our services cease immediately.</li>
-                        <li><strong>Changes to Terms</strong><br>- We may update these Terms of Service at any time without notice.<br>- Your continued use of our services implies acceptance of the updated terms.</li>
-                        <li><strong>Governing Law</strong><br>- These Terms of Service are governed by and construed in accordance with the laws of Your Country/State.<br>- Any disputes arising from these terms will be resolved through insert dispute resolution process.</li>
+                        <li><strong>Introduction</strong><br>Welcome to Dizealital, a digital service platform
+                            providing
+                            Services like:-<br>1) Web Development<br>2) Search Engine Optimisation (SEO)<br>3)
+                            Facebook
+                            ads<br>4) Instagram ads<br>5) Email Marketing<br>6) Social Media Marketing (SMM)<br>7)
+                            Performance Marketing<br>8) Content Marketing.<br>By accessing or using our website or
+                            services, you agree to these Terms of Service.</li>
+                        <li><strong>Definitions</strong><br>- "We" or "Us" refers to [Your Company Name].<br>- "You"
+                            or
+                            "User" refers to anyone accessing or using our website or services.<br>- "Services"
+                            refers
+                            to the digital services provided by us.</li>
+                        <li><strong>Use of Services</strong><br>- You must be at least 18 years old to use our
+                            services.<br>- You agree to use our services for lawful purposes only.<br>- You're
+                            responsible for maintaining the confidentiality of your account information.</li>
+                        <li><strong>Intellectual Property</strong><br>- Our website and services, including content,
+                            logos, and trademarks, are owned by us or our licensors.<br>- You may not reproduce,
+                            distribute, or modify our content without permission.</li>
+                        <li><strong>Payment and Refund</strong><br>- Our payment terms are as follows: [insert
+                            payment
+                            terms].<br>- Refunds are handled according to our refund policy: [insert refund policy].
+                        </li>
+                        <li><strong>Data Privacy</strong><br>- Our Privacy Policy explains how we collect, use, and
+                            protect your personal data.<br>- You agree to our Privacy Policy by using our services.
+                        </li>
+                        <li><strong>Liability and Disclaimer</strong><br>- We strive to provide accurate and
+                            reliable
+                            services, but we make no warranties or representations.<br>- We're not liable for
+                            damages or
+                            losses resulting from our services, except as required by law.</li>
+                        <li><strong>Termination</strong><br>- We reserve the right to terminate or suspend your
+                            access
+                            to our services without notice.<br>- Upon termination, your rights to use our services
+                            cease
+                            immediately.</li>
+                        <li><strong>Changes to Terms</strong><br>- We may update these Terms of Service at any time
+                            without notice.<br>- Your continued use of our services implies acceptance of the
+                            updated
+                            terms.</li>
+                        <li><strong>Governing Law</strong><br>- These Terms of Service are governed by and construed
+                            in
+                            accordance with the laws of Your Country/State.<br>- Any disputes arising from these
+                            terms
+                            will be resolved through insert dispute resolution process.</li>
                     </ol>
                 </div>
             </div>
             <div class="flex justify-end p-6 border-t border-gray-200">
-                <button id="acceptTerms" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-md mr-3 transition duration-300">Accept Terms</button>
-                <button id="closeModalFooter" class="bg-gray-300 hover:bg-gray-400 text-gray-700 font-semibold py-2 px-4 rounded-md transition duration-300">Close</button>
+                <button id="acceptTerms"
+                    class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-md mr-3 transition duration-300">Accept
+                    Terms</button>
+                <button id="closeModalFooter"
+                    class="bg-gray-300 hover:bg-gray-400 text-gray-700 font-semibold py-2 px-4 rounded-md transition duration-300">Close</button>
             </div>
         </div>
     </div>
@@ -1319,37 +1305,60 @@
             background-color: rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(4px);
         }
+
         .modal-content {
             max-height: 80vh;
             overflow-y: auto;
         }
+
         .modal-content::-webkit-scrollbar {
             width: 8px;
         }
+
         .modal-content::-webkit-scrollbar-track {
             background: #f1f1f1;
             border-radius: 4px;
         }
+
         .modal-content::-webkit-scrollbar-thumb {
             background: #888;
             border-radius: 4px;
         }
+
         .modal-content::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
+
         .fade-in {
             animation: fadeIn 0.3s ease-out;
         }
+
         .fade-out {
             animation: fadeOut 0.3s ease-out;
         }
+
         @keyframes fadeIn {
-            from { opacity: 0; transform: scale(0.9); }
-            to { opacity: 1; transform: scale(1); }
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
+
         @keyframes fadeOut {
-            from { opacity: 1; transform: scale(1); }
-            to { opacity: 0; transform: scale(0.9); }
+            from {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            to {
+                opacity: 0;
+                transform: scale(0.9);
+            }
         }
     </style>
 
@@ -1564,16 +1573,16 @@
         if (termsButton) termsButton.addEventListener('click', openModal);
         if (closeModal) closeModal.addEventListener('click', closeModalFunction);
         if (closeModalFooter) closeModalFooter.addEventListener('click', closeModalFunction);
-        if (acceptTerms) acceptTerms.addEventListener('click', function() {
+        if (acceptTerms) acceptTerms.addEventListener('click', function () {
             alert('Terms accepted! Thank you.');
             closeModalFunction();
         });
-        if (termsModal) termsModal.addEventListener('click', function(e) {
+        if (termsModal) termsModal.addEventListener('click', function (e) {
             if (e.target === termsModal) {
                 closeModalFunction();
             }
         });
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape' && termsModal && !termsModal.classList.contains('hidden')) {
                 closeModalFunction();
             }
