@@ -26,6 +26,8 @@
     <meta name="twitter:image" content="https://www.dizealital.com/Logo.png">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="Logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Structured Data: Organization & Website -->
     <script type="application/ld+json">
     {
@@ -80,9 +82,193 @@
         }
     </script>
     <style>
+        :root {
+            --primary: #3b82f6;
+            --secondary: #8b5cf6;
+        }
+
+        /* Custom Tailwind configuration */
+        .from-primary {
+            --tw-gradient-from: var(--primary) !important;
+        }
+
+        .to-secondary {
+            --tw-gradient-to: var(--secondary) !important;
+        }
+
+        .text-primary {
+            color: var(--primary) !important;
+        }
+
+        .hover\:from-secondary:hover {
+            --tw-gradient-from: var(--secondary) !important;
+        }
+
+        .hover\:to-primary:hover {
+            --tw-gradient-to: var(--primary) !important;
+        }
+
+        .focus\:ring-primary:focus {
+            --tw-ring-color: var(--primary) !important;
+        }
+
+        /* Custom animations */
+        @keyframes slideInLeft {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-slideInLeft {
+            animation: slideInLeft 0.8s ease-out;
+        }
+
+        /* Ripple effect */
+        .ripple {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ripple::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .ripple:active::after {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* Form styling enhancements */
+        .form-input {
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Glass morphism effect */
+        .contact-card {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        /* Background gradient */
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Lato', 'Libertinus Sans', 'Open Sans', 'Inter', sans-serif;
+        }
+
+        /* Success and error messages */
+        .message {
+            transition: all 0.3s ease;
+            transform: translateY(-10px);
+            opacity: 0;
+        }
+
+        .message.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* Loading spinner */
+        .spinner {
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 2px solid white;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Floating elements */
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Input focus effects */
+        .input-group {
+            position: relative;
+        }
+
+        .input-group label {
+            transition: all 0.3s ease;
+        }
+
+        .input-group input:focus+label,
+        .input-group select:focus+label,
+        .input-group textarea:focus+label {
+            color: var(--primary);
+            transform: scale(0.95);
+        }
+
+        .ripple-effect {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            transform: scale(0);
+            animation: ripple-animation 0.6s linear;
+            pointer-events: none;
+        }
+
+        @keyframes ripple-animation {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+
+        .focused {
+            transform: scale(1.02);
+        }
+
         .gradient-bg {
             background: linear-gradient(135deg, #00CED1 0%, #20B2AA 50%, #008B8B 100%);
         }
+
 
         .gradient-text {
             background: linear-gradient(135deg, #F59E0B, #F97316);
@@ -104,7 +290,18 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
+
+        .nav-link,
+        .mobile-nav-link {
+            font-size: 1.15rem !important;
+            font-family: 'Lato', sans-serif !important;
+        }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="bg-gray-50">
@@ -115,7 +312,9 @@
                 <div class="flex items-center">
                     <div class="flex-shrink-0 flex items-center">
                         <img src="Logo.png" alt="Dizealital Company Logo" class="h-10 w-10 mr-3">
-                        <a href="#home"><h1 class="text-2xl font-bold text-primary">Dizealital</h1></a>
+                        <a href="#home">
+                            <h1 class="text-2xl font-bold text-primary">Dizealital</h1>
+                        </a>
                     </div>
                 </div>
 
@@ -124,10 +323,10 @@
                     <div class="ml-10 flex items-baseline space-x-4">
                         <a href="#home"
                             class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
-                        <a href="#services"
-                            class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
                         <a href="#about"
                             class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="#services"
+                            class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
                         <a href="#team"
                             class="nav-link text-gray-700 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Our
                             Team</a>
@@ -339,6 +538,171 @@
         </div>
     </section>
 
+
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div
+                        class="inline-flex items-center px-4 py-2 bg-blue-50 rounded-full text-blue-600 text-sm font-medium mb-4">
+                        <i class="fas fa-star mr-2"></i>
+                        About Our Agency
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                        About <span class="text-primary">Dizealital</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        At Dizealital, we are passionate about helping businesses succeed in the digital world. Our
+                        mission is simple yet powerful: <strong class="text-gray-900">"To digitally serve our
+                            clients in
+                            the best way
+                            possible."</strong>
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        We combine creativity, technology, and data-driven strategies to deliver exceptional results
+                        for
+                        our clients. Our team of experts specializes in various aspects of digital marketing,
+                        ensuring
+                        comprehensive solutions for your business needs.
+                    </p>
+                </div>
+
+                <!-- Enhanced SVG Illustration -->
+                <div class="order-1 lg:order-2">
+                    <div class="relative bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 shadow-xl">
+                        <svg class="w-full h-auto" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background elements -->
+                            <circle cx="450" cy="100" r="80" fill="#E0E7FF" opacity="0.5" />
+                            <circle cx="150" cy="400" r="60" fill="#DBEAFE" opacity="0.5" />
+
+                            <!-- Main computer/laptop -->
+                            <rect x="200" y="180" width="200" height="140" rx="8" fill="#1F2937" stroke="#374151"
+                                stroke-width="2" />
+                            <rect x="210" y="190" width="180" height="110" rx="4" fill="#3B82F6" />
+
+                            <!-- Screen content - dashboard -->
+                            <rect x="220" y="200" width="160" height="8" rx="4" fill="#FFFFFF" opacity="0.9" />
+                            <rect x="220" y="220" width="100" height="6" rx="3" fill="#FFFFFF" opacity="0.7" />
+                            <rect x="220" y="235" width="80" height="6" rx="3" fill="#FFFFFF" opacity="0.7" />
+
+                            <!-- Charts on screen -->
+                            <rect x="330" y="210" width="40" height="30" rx="2" fill="#FFFFFF" opacity="0.2" />
+                            <polyline points="335,235 340,225 345,230 350,220 355,225 360,215" stroke="#FFFFFF"
+                                stroke-width="2" fill="none" />
+
+                            <!-- Laptop base -->
+                            <rect x="180" y="320" width="240" height="20" rx="10" fill="#374151" />
+
+                            <!-- Floating elements around laptop -->
+                            <!-- Email icon -->
+                            <circle cx="120" cy="150" r="25" fill="#EF4444" />
+                            <path d="M110 143 L120 150 L130 143 M108 145 L132 145 L132 160 L108 160 Z" stroke="#FFFFFF"
+                                stroke-width="2" fill="none" />
+
+                            <!-- Social media icon -->
+                            <circle cx="480" cy="200" r="25" fill="#8B5CF6" />
+                            <circle cx="475" cy="195" r="4" fill="#FFFFFF" />
+                            <circle cx="485" cy="195" r="4" fill="#FFFFFF" />
+                            <circle cx="480" cy="205" r="4" fill="#FFFFFF" />
+                            <path d="M475 195 L480 205 M485 195 L480 205" stroke="#FFFFFF" stroke-width="2" />
+
+                            <!-- SEO/Search icon -->
+                            <circle cx="150" cy="300" r="25" fill="#10B981" />
+                            <circle cx="150" cy="300" r="8" fill="none" stroke="#FFFFFF" stroke-width="2" />
+                            <line x1="156" y1="306" x2="162" y2="312" stroke="#FFFFFF" stroke-width="2" />
+
+                            <!-- Analytics chart -->
+                            <rect x="450" y="300" width="50" height="50" rx="8" fill="#F59E0B" />
+                            <rect x="460" y="330" width="6" height="10" fill="#FFFFFF" />
+                            <rect x="470" y="325" width="6" height="15" fill="#FFFFFF" />
+                            <rect x="480" y="320" width="6" height="20" fill="#FFFFFF" />
+
+                            <!-- Connecting lines -->
+                            <line x1="145" y1="150" x2="200" y2="200" stroke="#E5E7EB" stroke-width="2"
+                                stroke-dasharray="5,5" />
+                            <line x1="455" y1="200" x2="400" y2="220" stroke="#E5E7EB" stroke-width="2"
+                                stroke-dasharray="5,5" />
+                            <line x1="175" y1="300" x2="200" y2="280" stroke="#E5E7EB" stroke-width="2"
+                                stroke-dasharray="5,5" />
+                            <line x1="450" y1="320" x2="400" y2="300" stroke="#E5E7EB" stroke-width="2"
+                                stroke-dasharray="5,5" />
+
+                            <!-- Decorative elements -->
+                            <circle cx="80" cy="80" r="3" fill="#3B82F6" />
+                            <circle cx="520" cy="80" r="3" fill="#8B5CF6" />
+                            <circle cx="80" cy="420" r="3" fill="#EF4444" />
+                            <circle cx="520" cy="420" r="3" fill="#10B981" />
+
+                            <!-- Person silhouette -->
+                            <circle cx="300" cy="380" r="15" fill="#6B7280" />
+                            <path d="M285 395 Q285 385 300 385 Q315 385 315 395 L315 420 L285 420 Z" fill="#6B7280" />
+                        </svg>
+
+                        <!-- Floating animation elements -->
+                        <div class="absolute top-4 right-4 w-8 h-8 bg-blue-500 rounded-full opacity-20 animate-bounce">
+                        </div>
+                        <div class="absolute bottom-4 left-4 w-6 h-6 bg-purple-500 rounded-full opacity-20 animate-bounce"
+                            style="animation-delay: 0.5s;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Why Choose Us Section -->
+            <div class="mt-20 bg-white p-8 md:p-12 rounded-2xl shadow-xl">
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Why Choose Us?</h3>
+                    <p class="text-gray-600 max-w-2xl mx-auto">We deliver exceptional results through our commitment
+                        to
+                        excellence, innovation, and client satisfaction.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div
+                            class="bg-gradient-to-br from-blue-50 to-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg transition-shadow">
+                            <i class="fas fa-users text-3xl text-primary"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-3 text-lg">Expert Team</h4>
+                        <p class="text-gray-600">Skilled professionals with years of industry experience and proven
+                            expertise</p>
+                    </div>
+
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div
+                            class="bg-gradient-to-br from-green-50 to-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg transition-shadow">
+                            <i class="fas fa-trophy text-3xl text-green-600"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-3 text-lg">Proven Results</h4>
+                        <p class="text-gray-600">Track record of successful campaigns and satisfied clients across
+                            industries</p>
+                    </div>
+
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div
+                            class="bg-gradient-to-br from-purple-50 to-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg transition-shadow">
+                            <i class="fas fa-cogs text-3xl text-purple-600"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-3 text-lg">Custom Solutions</h4>
+                        <p class="text-gray-600">Tailored strategies designed to meet your specific business goals
+                            and
+                            objectives</p>
+                    </div>
+
+                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                        <div
+                            class="bg-gradient-to-br from-orange-50 to-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg transition-shadow">
+                            <i class="fas fa-chart-bar text-3xl text-orange-600"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-900 mb-3 text-lg">Transparent Reporting</h4>
+                        <p class="text-gray-600">Regular updates and detailed analytics on campaign performance and
+                            ROI
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -540,7 +904,7 @@
                 <!-- Basic Package -->
                 <div
                     class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center border-t-4 border-primary hover:scale-105 transition-transform">
-                    <h3 class="text-xl font-bold text-primary mb-2 tracking-wide">BASIC</h3>
+                    <h3 class="text-xl font-bold text-primary mb-2 tracking-wide">💡 BASIC</h3>
                     <p class="text-gray-700 font-semibold mb-6">Social Media Manager</p>
                     <ul class="text-gray-600 space-y-2 mb-8 text-center">
                         <li>Profile Optimization</li>
@@ -559,7 +923,7 @@
                 <!-- Advanced Package -->
                 <div
                     class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center border-t-4 border-accent hover:scale-105 transition-transform">
-                    <h3 class="text-xl font-bold text-accent mb-2 tracking-wide">ADVANCED</h3>
+                    <h3 class="text-xl font-bold text-accent mb-2 tracking-wide">⚡ADVANCED</h3>
                     <p class="text-gray-700 font-semibold mb-6">Social Media Manager</p>
                     <ul class="text-gray-600 space-y-2 mb-8 text-center">
                         <li>Profile Optimization</li>
@@ -579,7 +943,7 @@
                 <!-- Premium Package -->
                 <div
                     class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center border-t-4 border-secondary hover:scale-105 transition-transform">
-                    <h3 class="text-xl font-bold text-secondary mb-2 tracking-wide">PREMIUM</h3>
+                    <h3 class="text-xl font-bold text-secondary mb-2 tracking-wide">🌟 PREMIUM</h3>
                     <p class="text-gray-700 font-semibold mb-6">Social Media Manager</p>
                     <ul class="text-gray-600 space-y-2 mb-8 text-center">
                         <li>Profile Optimization</li>
@@ -601,169 +965,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1">
-                    <div
-                        class="inline-flex items-center px-4 py-2 bg-blue-50 rounded-full text-blue-600 text-sm font-medium mb-4">
-                        <i class="fas fa-star mr-2"></i>
-                        About Our Agency
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-                        About <span class="text-primary">Dizealital</span>
-                    </h2>
-                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                        At Dizealital, we are passionate about helping businesses succeed in the digital world. Our
-                        mission is simple yet powerful: <strong class="text-gray-900">"To digitally serve our
-                            clients in
-                            the best way
-                            possible."</strong>
-                    </p>
-                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                        We combine creativity, technology, and data-driven strategies to deliver exceptional results
-                        for
-                        our clients. Our team of experts specializes in various aspects of digital marketing,
-                        ensuring
-                        comprehensive solutions for your business needs.
-                    </p>
-                </div>
 
-                <!-- Enhanced SVG Illustration -->
-                <div class="order-1 lg:order-2">
-                    <div class="relative bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 shadow-xl">
-                        <svg class="w-full h-auto" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Background elements -->
-                            <circle cx="450" cy="100" r="80" fill="#E0E7FF" opacity="0.5" />
-                            <circle cx="150" cy="400" r="60" fill="#DBEAFE" opacity="0.5" />
-
-                            <!-- Main computer/laptop -->
-                            <rect x="200" y="180" width="200" height="140" rx="8" fill="#1F2937" stroke="#374151"
-                                stroke-width="2" />
-                            <rect x="210" y="190" width="180" height="110" rx="4" fill="#3B82F6" />
-
-                            <!-- Screen content - dashboard -->
-                            <rect x="220" y="200" width="160" height="8" rx="4" fill="#FFFFFF" opacity="0.9" />
-                            <rect x="220" y="220" width="100" height="6" rx="3" fill="#FFFFFF" opacity="0.7" />
-                            <rect x="220" y="235" width="80" height="6" rx="3" fill="#FFFFFF" opacity="0.7" />
-
-                            <!-- Charts on screen -->
-                            <rect x="330" y="210" width="40" height="30" rx="2" fill="#FFFFFF" opacity="0.2" />
-                            <polyline points="335,235 340,225 345,230 350,220 355,225 360,215" stroke="#FFFFFF"
-                                stroke-width="2" fill="none" />
-
-                            <!-- Laptop base -->
-                            <rect x="180" y="320" width="240" height="20" rx="10" fill="#374151" />
-
-                            <!-- Floating elements around laptop -->
-                            <!-- Email icon -->
-                            <circle cx="120" cy="150" r="25" fill="#EF4444" />
-                            <path d="M110 143 L120 150 L130 143 M108 145 L132 145 L132 160 L108 160 Z" stroke="#FFFFFF"
-                                stroke-width="2" fill="none" />
-
-                            <!-- Social media icon -->
-                            <circle cx="480" cy="200" r="25" fill="#8B5CF6" />
-                            <circle cx="475" cy="195" r="4" fill="#FFFFFF" />
-                            <circle cx="485" cy="195" r="4" fill="#FFFFFF" />
-                            <circle cx="480" cy="205" r="4" fill="#FFFFFF" />
-                            <path d="M475 195 L480 205 M485 195 L480 205" stroke="#FFFFFF" stroke-width="2" />
-
-                            <!-- SEO/Search icon -->
-                            <circle cx="150" cy="300" r="25" fill="#10B981" />
-                            <circle cx="150" cy="300" r="8" fill="none" stroke="#FFFFFF" stroke-width="2" />
-                            <line x1="156" y1="306" x2="162" y2="312" stroke="#FFFFFF" stroke-width="2" />
-
-                            <!-- Analytics chart -->
-                            <rect x="450" y="300" width="50" height="50" rx="8" fill="#F59E0B" />
-                            <rect x="460" y="330" width="6" height="10" fill="#FFFFFF" />
-                            <rect x="470" y="325" width="6" height="15" fill="#FFFFFF" />
-                            <rect x="480" y="320" width="6" height="20" fill="#FFFFFF" />
-
-                            <!-- Connecting lines -->
-                            <line x1="145" y1="150" x2="200" y2="200" stroke="#E5E7EB" stroke-width="2"
-                                stroke-dasharray="5,5" />
-                            <line x1="455" y1="200" x2="400" y2="220" stroke="#E5E7EB" stroke-width="2"
-                                stroke-dasharray="5,5" />
-                            <line x1="175" y1="300" x2="200" y2="280" stroke="#E5E7EB" stroke-width="2"
-                                stroke-dasharray="5,5" />
-                            <line x1="450" y1="320" x2="400" y2="300" stroke="#E5E7EB" stroke-width="2"
-                                stroke-dasharray="5,5" />
-
-                            <!-- Decorative elements -->
-                            <circle cx="80" cy="80" r="3" fill="#3B82F6" />
-                            <circle cx="520" cy="80" r="3" fill="#8B5CF6" />
-                            <circle cx="80" cy="420" r="3" fill="#EF4444" />
-                            <circle cx="520" cy="420" r="3" fill="#10B981" />
-
-                            <!-- Person silhouette -->
-                            <circle cx="300" cy="380" r="15" fill="#6B7280" />
-                            <path d="M285 395 Q285 385 300 385 Q315 385 315 395 L315 420 L285 420 Z" fill="#6B7280" />
-                        </svg>
-
-                        <!-- Floating animation elements -->
-                        <div class="absolute top-4 right-4 w-8 h-8 bg-blue-500 rounded-full opacity-20 animate-bounce">
-                        </div>
-                        <div class="absolute bottom-4 left-4 w-6 h-6 bg-purple-500 rounded-full opacity-20 animate-bounce"
-                            style="animation-delay: 0.5s;"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Enhanced Why Choose Us Section -->
-            <div class="mt-20 bg-white p-8 md:p-12 rounded-2xl shadow-xl">
-                <div class="text-center mb-12">
-                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Why Choose Us?</h3>
-                    <p class="text-gray-600 max-w-2xl mx-auto">We deliver exceptional results through our commitment
-                        to
-                        excellence, innovation, and client satisfaction.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
-                        <div
-                            class="bg-gradient-to-br from-blue-50 to-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg transition-shadow">
-                            <i class="fas fa-users text-3xl text-primary"></i>
-                        </div>
-                        <h4 class="font-bold text-gray-900 mb-3 text-lg">Expert Team</h4>
-                        <p class="text-gray-600">Skilled professionals with years of industry experience and proven
-                            expertise</p>
-                    </div>
-
-                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
-                        <div
-                            class="bg-gradient-to-br from-green-50 to-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg transition-shadow">
-                            <i class="fas fa-trophy text-3xl text-green-600"></i>
-                        </div>
-                        <h4 class="font-bold text-gray-900 mb-3 text-lg">Proven Results</h4>
-                        <p class="text-gray-600">Track record of successful campaigns and satisfied clients across
-                            industries</p>
-                    </div>
-
-                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
-                        <div
-                            class="bg-gradient-to-br from-purple-50 to-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg transition-shadow">
-                            <i class="fas fa-cogs text-3xl text-purple-600"></i>
-                        </div>
-                        <h4 class="font-bold text-gray-900 mb-3 text-lg">Custom Solutions</h4>
-                        <p class="text-gray-600">Tailored strategies designed to meet your specific business goals
-                            and
-                            objectives</p>
-                    </div>
-
-                    <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
-                        <div
-                            class="bg-gradient-to-br from-orange-50 to-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg transition-shadow">
-                            <i class="fas fa-chart-bar text-3xl text-orange-600"></i>
-                        </div>
-                        <h4 class="font-bold text-gray-900 mb-3 text-lg">Transparent Reporting</h4>
-                        <p class="text-gray-600">Regular updates and detailed analytics on campaign performance and
-                            ROI
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Team Section -->
     <section id="team" class="py-20 bg-white">
@@ -807,10 +1009,9 @@
                         </div>
                     </div>
                     <h4 class="text-xl font-semibold text-gray-900 mb-1">Sneha Mitra</h4>
-                    <!-- <p class="text-primary font-medium mb-2">Creative Director</p>
-                    <p class="text-gray-600 text-sm mb-4">Expert in brand design and creative campaigns</p> -->
                     <div class="flex justify-center space-x-3">
-                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                        <a href="https://www.linkedin.com/in/snehamitra1818"
+                            class="text-gray-400 hover:text-primary transition-colors" target="_blank">
                             <i class="fab fa-linkedin fa-lg"></i>
                         </a>
                         <a href="https://www.instagram.com/snehamitra1818?utm_source=qr&igsh=MWdocHE3NXd6ajJ3cA=="
@@ -829,13 +1030,13 @@
                         </div>
                     </div>
                     <h4 class="text-xl font-semibold text-gray-900 mb-1">Neha Jana</h4>
-                    <!-- <p class="text-primary font-medium mb-2">SEO Specialist</p> -->
-                    <!-- <p class="text-gray-600 text-sm mb-4">Technical SEO expert and content optimization guru</p> -->
                     <div class="flex justify-center space-x-3">
-                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                        <a href="https://www.linkedin.com/in/neha14-gbs"
+                            class="text-gray-400 hover:text-primary transition-colors" target="_blank">
                             <i class="fab fa-linkedin fa-lg"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                        <a href="https://www.instagram.com/___neehhaa___?igsh=cTQ3NXZ2N2F3bnZu"
+                            class="text-gray-400 hover:text-primary transition-colors" target="_blank">
                             <i class="fab fa-instagram fa-lg"></i>
                         </a>
                     </div>
@@ -850,14 +1051,14 @@
                         </div>
                     </div>
                     <h4 class="text-xl font-semibold text-gray-900 mb-1">Rounak Jana</h4>
-                    <!-- <p class="text-primary font-medium mb-2">Full Stack Developer & Freelancer</p> -->
-                    <!-- <p class="text-gray-600 text-sm mb-4">Social media strategist and community engagement expert</p> -->
                     <div class="flex justify-center space-x-3">
-                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                        <a href="https://www.linkedin.com/in/rounakjana/"
+                            class="text-gray-400 hover:text-primary transition-colors" target="_blank">
                             <i class="fab fa-linkedin fa-lg"></i>
                         </a>
 
-                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                        <a href="https://github.com/ronie-18" class="text-gray-400 hover:text-primary transition-colors"
+                            target="_blank">
                             <i class="fab fa-github fa-lg"></i>
                         </a>
                     </div>
@@ -969,7 +1170,7 @@
                             <h3 class="text-2xl font-bold text-gray-900">Send us a message</h3>
                         </div>
 
-                        <form id="contact-form" class="space-y-6">
+                        <form action="http://localhost:3001/contact" method="POST" id="contact-form" class="space-y-6">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div class="relative">
                                     <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
@@ -987,23 +1188,41 @@
                                 </div>
                             </div>
 
-                            <div>
-                                <label for="service" class="block text-sm font-semibold text-gray-700 mb-2">
-                                    <i class="fas fa-cogs mr-2 text-primary"></i>Service Interested In
-                                </label>
-                                <select id="service" name="service"
-                                    class="form-input w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent bg-white/50 backdrop-blur-sm">
-                                    <option value="">Select a service</option>
-                                    <option value="web-development">🌐 Web Development</option>
-                                    <option value="seo">🔍 Search Engine Optimisation (SEO)</option>
-                                    <option value="facebook-ads">📘 Facebook Ads</option>
-                                    <option value="instagram-ads">📸 Instagram Ads</option>
-                                    <option value="email-marketing">📧 Email Marketing</option>
-                                    <option value="smm">📱 Social Media Marketing (SMM)</option>
-                                    <option value="performance-marketing">📊 Performance Marketing</option>
-                                    <option value="content-marketing">✍️ Content Marketing</option>
-                                </select>
+                            <div class="flex gap-4">
+                                <!-- Service Dropdown -->
+                                <div class="w-1/2">
+                                    <label for="service" class="block text-sm font-semibold text-gray-700 mb-2">
+                                        <i class="fas fa-cogs mr-2 text-primary"></i>Service Interested In
+                                    </label>
+                                    <select id="service" name="service"
+                                        class="form-input w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent bg-white/50 backdrop-blur-sm">
+                                        <option value="">Select a service</option>
+                                        <option value="web-development">🌐 Web Development</option>
+                                        <option value="seo">🔍 Search Engine Optimisation (SEO)</option>
+                                        <option value="facebook-ads">📘 Facebook Ads</option>
+                                        <option value="instagram-ads">📸 Instagram Ads</option>
+                                        <option value="email-marketing">📧 Email Marketing</option>
+                                        <option value="smm">📱 Social Media Marketing (SMM)</option>
+                                        <option value="performance-marketing">📊 Performance Marketing</option>
+                                        <option value="content-marketing">✍️ Content Marketing</option>
+                                    </select>
+                                </div>
+
+                                <!-- Package Dropdown -->
+                                <div class="w-1/2">
+                                    <label for="package" class="block text-sm font-semibold text-gray-700 mb-2">
+                                        <i class="fas fa-box mr-2 text-primary"></i>Package
+                                    </label>
+                                    <select id="package" name="package"
+                                        class="form-input w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent bg-white/50 backdrop-blur-sm">
+                                        <option value="">Select a package</option>
+                                        <option value="basic">💡 Basic</option>
+                                        <option value="advance">⚡ Advance</option>
+                                        <option value="premium">🌟 Premium</option>
+                                    </select>
+                                </div>
                             </div>
+
 
                             <div>
                                 <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
@@ -1020,6 +1239,179 @@
                         </form>
                     </div>
                 </div>
+
+
+
+
+                <script>
+                    // Form handling
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const form = document.getElementById('contact-form');
+                        const submitBtn = document.getElementById('submit-btn');
+                        const btnText = document.getElementById('btn-text');
+                        const btnLoading = document.getElementById('btn-loading');
+                        const successMessage = document.getElementById('success-message');
+                        const errorMessage = document.getElementById('error-message');
+                        const errorText = document.getElementById('error-text');
+
+                        // Hide messages initially
+                        successMessage.style.display = 'none';
+                        errorMessage.style.display = 'none';
+
+                        // Form validation
+                        function validateForm(formData) {
+                            const errors = [];
+
+                            if (!formData.get('name').trim()) {
+                                errors.push('Name is required');
+                            }
+
+                            if (!formData.get('email').trim()) {
+                                errors.push('Email is required');
+                            } else if (!isValidEmail(formData.get('email'))) {
+                                errors.push('Please enter a valid email address');
+                            }
+
+                            if (!formData.get('service')) {
+                                errors.push('Please select a service');
+                            }
+
+                            if (!formData.get('message').trim()) {
+                                errors.push('Message is required');
+                            }
+
+                            return errors;
+                        }
+
+                        function isValidEmail(email) {
+                            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                            return emailRegex.test(email);
+                        }
+
+                        // Show/hide messages
+                        function showMessage(element, message = null) {
+                            if (message) {
+                                errorText.textContent = message;
+                            }
+                            element.style.display = 'block';
+                            setTimeout(() => {
+                                element.classList.add('show');
+                            }, 10);
+
+                            // Auto hide after 5 seconds
+                            setTimeout(() => {
+                                hideMessage(element);
+                            }, 5000);
+                        }
+
+                        function hideMessage(element) {
+                            element.classList.remove('show');
+                            setTimeout(() => {
+                                element.style.display = 'none';
+                            }, 300);
+                        }
+
+                        // Set loading state
+                        function setLoading(loading) {
+                            if (loading) {
+                                submitBtn.disabled = true;
+                                btnText.classList.add('hidden');
+                                btnLoading.classList.remove('hidden');
+                            } else {
+                                submitBtn.disabled = false;
+                                btnText.classList.remove('hidden');
+                                btnLoading.classList.add('hidden');
+                            }
+                        }
+
+                        // Simulate form submission (replace with actual backend call)
+                        async function submitForm(formData) {
+                            // Simulate API call delay
+                            await new Promise(resolve => setTimeout(resolve, 2000));
+
+                            // Simulate random success/failure for demo
+                            if (Math.random() > 0.2) {
+                                return { success: true };
+                            } else {
+                                throw new Error('Server error occurred');
+                            }
+                        }
+
+                        // Form submit handler
+                        form.addEventListener('submit', async function (e) {
+                            e.preventDefault();
+
+                            // Hide any existing messages
+                            hideMessage(successMessage);
+                            hideMessage(errorMessage);
+
+                            const formData = new FormData(form);
+
+                            // Validate form
+                            const errors = validateForm(formData);
+                            if (errors.length > 0) {
+                                showMessage(errorMessage, errors.join(', '));
+                                return;
+                            }
+
+                            try {
+                                setLoading(true);
+
+                                // Submit form (replace this with your actual submission logic)
+                                const result = await submitForm(formData);
+
+                                if (result.success) {
+                                    showMessage(successMessage);
+                                    form.reset(); // Clear form on success
+                                }
+
+                            } catch (error) {
+                                console.error('Form submission error:', error);
+                                showMessage(errorMessage, 'Failed to send message. Please try again later.');
+                            } finally {
+                                setLoading(false);
+                            }
+                        });
+
+                        // Enhanced input interactions
+                        const inputs = document.querySelectorAll('input, select, textarea');
+                        inputs.forEach(input => {
+                            input.addEventListener('focus', function () {
+                                this.parentElement.classList.add('focused');
+                            });
+
+                            input.addEventListener('blur', function () {
+                                this.parentElement.classList.remove('focused');
+                            });
+                        });
+
+                        // Add ripple effect to button clicks
+                        submitBtn.addEventListener('click', function (e) {
+                            const ripple = document.createElement('span');
+                            const rect = this.getBoundingClientRect();
+                            const size = Math.max(rect.width, rect.height);
+                            const x = e.clientX - rect.left - size / 2;
+                            const y = e.clientY - rect.top - size / 2;
+
+                            ripple.style.width = ripple.style.height = size + 'px';
+                            ripple.style.left = x + 'px';
+                            ripple.style.top = y + 'px';
+                            ripple.classList.add('ripple-effect');
+
+                            this.appendChild(ripple);
+
+                            setTimeout(() => {
+                                ripple.remove();
+                            }, 600);
+                        });
+
+                        // Add floating animation delay to form elements
+                        const formElements = document.querySelectorAll('.form-input');
+                        formElements.forEach((element, index) => {
+                            element.style.animationDelay = `${index * 0.1}s`;
+                        });
+                    });
+                </script>
 
                 <!-- Contact Info -->
                 <div class="animate-slideInRight space-y-8">
