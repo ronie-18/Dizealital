@@ -81,7 +81,68 @@
             }
         }
     </script>
+    <!-- Modal CSS -->
     <style>
+        .modal-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+        }
+
+        .modal-content {
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .modal-content::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .modal-content::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+
+        .modal-content::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .fade-out {
+            animation: fadeOut 0.3s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            to {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+        }
+
         :root {
             --primary: #3b82f6;
             --secondary: #8b5cf6;
@@ -425,113 +486,9 @@
                 </div>
 
                 <!-- Right Content - Digital Marketing Illustration -->
-                <div class="hidden lg:block">
-                    <div class="relative w-full max-w-lg mx-auto">
-                        <svg viewBox="0 0 500 400" class="w-full h-auto">
-                            <!-- Background Circle -->
-                            <circle cx="250" cy="200" r="180" fill="rgba(255,255,255,0.1)"
-                                stroke="rgba(255,255,255,0.2)" stroke-width="2" />
-
-                            <!-- Central Device (Laptop) -->
-                            <rect x="180" y="150" width="140" height="90" rx="8" fill="#2D3748" stroke="#4A5568"
-                                stroke-width="2" />
-                            <rect x="190" y="160" width="120" height="70" rx="4" fill="#1A202C" />
-
-                            <!-- Screen Content -->
-                            <rect x="195" y="165" width="110" height="8" rx="4" fill="#00CED1" />
-                            <rect x="195" y="178" width="80" height="6" rx="3" fill="#48BB78" />
-                            <rect x="195" y="188" width="90" height="6" rx="3" fill="#ED8936" />
-                            <rect x="195" y="198" width="70" height="6" rx="3" fill="#9F7AEA" />
-
-                            <!-- Mini Chart on Screen -->
-                            <rect x="280" y="175" width="20" height="25" rx="2" fill="rgba(0,206,209,0.2)" />
-                            <polyline points="285,195 290,185 295,180 300,175" fill="none" stroke="#00CED1"
-                                stroke-width="2" />
-
-                            <!-- Social Media Icons Around -->
-                            <!-- Facebook -->
-                            <circle cx="120" cy="100" r="25" fill="#1877F2" />
-                            <rect x="110" y="90" width="20" height="20" rx="3" fill="white" />
-                            <rect x="113" y="93" width="14" height="4" fill="#1877F2" />
-                            <rect x="113" y="99" width="14" height="4" fill="#1877F2" />
-                            <rect x="113" y="105" width="10" height="2" fill="#1877F2" />
-
-                            <!-- Instagram -->
-                            <circle cx="380" cy="80" r="25" fill="#E4405F" />
-                            <rect x="365" y="65" width="30" height="30" rx="8" fill="white" />
-                            <rect x="370" y="70" width="20" height="20" rx="6" fill="#E4405F" />
-                            <circle cx="380" cy="80" r="6" fill="white" />
-                            <circle cx="385" cy="75" r="2" fill="white" />
-
-                            <!-- YouTube -->
-                            <circle cx="100" cy="300" r="25" fill="#FF0000" />
-                            <polygon points="90,290 90,310 110,300" fill="white" />
-
-                            <!-- LinkedIn -->
-                            <circle cx="400" cy="320" r="25" fill="#0A66C2" />
-                            <rect x="390" y="310" width="20" height="20" rx="3" fill="white" />
-                            <rect x="393" y="313" width="6" height="14" fill="#0A66C2" />
-                            <rect x="401" y="318" width="12" height="9" fill="#0A66C2" />
-                            <rect x="401" y="313" width="4" height="4" fill="#0A66C2" />
-
-                            <!-- Growth Arrow -->
-                            <path d="M 320 250 Q 350 220 380 200" fill="none" stroke="#00CED1" stroke-width="4"
-                                marker-end="url(#arrowhead)" />
-                            <text x="340" y="230" fill="#00CED1" font-size="14" font-weight="bold">Growth</text>
-
-                            <!-- Analytics Chart -->
-                            <g transform="translate(50, 220)">
-                                <rect x="0" y="40" width="8" height="20" fill="#48BB78" rx="2" />
-                                <rect x="12" y="35" width="8" height="25" fill="#00CED1" rx="2" />
-                                <rect x="24" y="30" width="8" height="30" fill="#ED8936" rx="2" />
-                                <rect x="36" y="25" width="8" height="35" fill="#9F7AEA" rx="2" />
-                                <rect x="48" y="20" width="8" height="40" fill="#F56565" rx="2" />
-                                <text x="0" y="75" fill="white" font-size="10">Analytics</text>
-                            </g>
-
-                            <!-- SEO Icon -->
-                            <circle cx="350" cy="140" r="20" fill="#48BB78" />
-                            <circle cx="350" cy="140" r="12" fill="none" stroke="white" stroke-width="2" />
-                            <path d="M 360 130 L 365 125" stroke="white" stroke-width="2" stroke-linecap="round" />
-                            <text x="330" y="175" fill="white" font-size="10">SEO</text>
-
-                            <!-- Email Marketing -->
-                            <circle cx="150" cy="60" r="20" fill="#ED8936" />
-                            <rect x="140" y="52" width="20" height="16" rx="3" fill="white" />
-                            <path d="M 140 52 L 150 60 L 160 52" fill="none" stroke="#ED8936" stroke-width="2" />
-                            <text x="130" y="95" fill="white" font-size="10">Email</text>
-
-                            <!-- PPC/Ads Icon -->
-                            <circle cx="180" cy="330" r="20" fill="#9F7AEA" />
-                            <rect x="170" y="322" width="20" height="16" rx="3" fill="white" />
-                            <circle cx="180" cy="330" r="6" fill="#9F7AEA" />
-                            <text x="160" y="360" fill="white" font-size="10">PPC Ads</text>
-
-                            <!-- Content Marketing -->
-                            <circle cx="320" cy="320" r="20" fill="#F56565" />
-                            <rect x="312" y="315" width="16" height="2" fill="white" />
-                            <rect x="312" y="320" width="12" height="2" fill="white" />
-                            <rect x="312" y="325" width="14" height="2" fill="white" />
-                            <text x="295" y="350" fill="white" font-size="10">Content</text>
-
-                            <!-- Connection Lines -->
-                            <path d="M 145 100 Q 200 120 180 150" fill="none" stroke="rgba(255,255,255,0.3)"
-                                stroke-width="1" stroke-dasharray="3,3" />
-                            <path d="M 355 80 Q 320 110 320 150" fill="none" stroke="rgba(255,255,255,0.3)"
-                                stroke-width="1" stroke-dasharray="3,3" />
-                            <path d="M 125 300 Q 160 270 180 240" fill="none" stroke="rgba(255,255,255,0.3)"
-                                stroke-width="1" stroke-dasharray="3,3" />
-                            <path d="M 375 320 Q 340 290 320 240" fill="none" stroke="rgba(255,255,255,0.3)"
-                                stroke-width="1" stroke-dasharray="3,3" />
-
-                            <!-- Arrow marker definition -->
-                            <defs>
-                                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5"
-                                    orient="auto">
-                                    <polygon points="0 0, 10 3.5, 0 7" fill="#00CED1" />
-                                </marker>
-                            </defs>
-                        </svg>
+                <div class="hidden lg:flex items-center justify-center">
+                    <div class="w-full max-w-lg min-h-[350px] bg-gray-200 rounded-2xl border-2 border-dashed border-gray-400 flex items-center justify-center text-gray-500 text-xl font-semibold">
+                        Image Placeholder (to be added)
                     </div>
                 </div>
             </div>
@@ -1243,175 +1200,7 @@
 
 
 
-                <script>
-                    // Form handling
-                    document.addEventListener('DOMContentLoaded', function () {
-                        const form = document.getElementById('contact-form');
-                        const submitBtn = document.getElementById('submit-btn');
-                        const btnText = document.getElementById('btn-text');
-                        const btnLoading = document.getElementById('btn-loading');
-                        const successMessage = document.getElementById('success-message');
-                        const errorMessage = document.getElementById('error-message');
-                        const errorText = document.getElementById('error-text');
 
-                        // Hide messages initially
-                        successMessage.style.display = 'none';
-                        errorMessage.style.display = 'none';
-
-                        // Form validation
-                        function validateForm(formData) {
-                            const errors = [];
-
-                            if (!formData.get('name').trim()) {
-                                errors.push('Name is required');
-                            }
-
-                            if (!formData.get('email').trim()) {
-                                errors.push('Email is required');
-                            } else if (!isValidEmail(formData.get('email'))) {
-                                errors.push('Please enter a valid email address');
-                            }
-
-                            if (!formData.get('service')) {
-                                errors.push('Please select a service');
-                            }
-
-                            if (!formData.get('message').trim()) {
-                                errors.push('Message is required');
-                            }
-
-                            return errors;
-                        }
-
-                        function isValidEmail(email) {
-                            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                            return emailRegex.test(email);
-                        }
-
-                        // Show/hide messages
-                        function showMessage(element, message = null) {
-                            if (message) {
-                                errorText.textContent = message;
-                            }
-                            element.style.display = 'block';
-                            setTimeout(() => {
-                                element.classList.add('show');
-                            }, 10);
-
-                            // Auto hide after 5 seconds
-                            setTimeout(() => {
-                                hideMessage(element);
-                            }, 5000);
-                        }
-
-                        function hideMessage(element) {
-                            element.classList.remove('show');
-                            setTimeout(() => {
-                                element.style.display = 'none';
-                            }, 300);
-                        }
-
-                        // Set loading state
-                        function setLoading(loading) {
-                            if (loading) {
-                                submitBtn.disabled = true;
-                                btnText.classList.add('hidden');
-                                btnLoading.classList.remove('hidden');
-                            } else {
-                                submitBtn.disabled = false;
-                                btnText.classList.remove('hidden');
-                                btnLoading.classList.add('hidden');
-                            }
-                        }
-
-                        // Simulate form submission (replace with actual backend call)
-                        async function submitForm(formData) {
-                            // Simulate API call delay
-                            await new Promise(resolve => setTimeout(resolve, 2000));
-
-                            // Simulate random success/failure for demo
-                            if (Math.random() > 0.2) {
-                                return { success: true };
-                            } else {
-                                throw new Error('Server error occurred');
-                            }
-                        }
-
-                        // Form submit handler
-                        form.addEventListener('submit', async function (e) {
-                            e.preventDefault();
-
-                            // Hide any existing messages
-                            hideMessage(successMessage);
-                            hideMessage(errorMessage);
-
-                            const formData = new FormData(form);
-
-                            // Validate form
-                            const errors = validateForm(formData);
-                            if (errors.length > 0) {
-                                showMessage(errorMessage, errors.join(', '));
-                                return;
-                            }
-
-                            try {
-                                setLoading(true);
-
-                                // Submit form (replace this with your actual submission logic)
-                                const result = await submitForm(formData);
-
-                                if (result.success) {
-                                    showMessage(successMessage);
-                                    form.reset(); // Clear form on success
-                                }
-
-                            } catch (error) {
-                                console.error('Form submission error:', error);
-                                showMessage(errorMessage, 'Failed to send message. Please try again later.');
-                            } finally {
-                                setLoading(false);
-                            }
-                        });
-
-                        // Enhanced input interactions
-                        const inputs = document.querySelectorAll('input, select, textarea');
-                        inputs.forEach(input => {
-                            input.addEventListener('focus', function () {
-                                this.parentElement.classList.add('focused');
-                            });
-
-                            input.addEventListener('blur', function () {
-                                this.parentElement.classList.remove('focused');
-                            });
-                        });
-
-                        // Add ripple effect to button clicks
-                        submitBtn.addEventListener('click', function (e) {
-                            const ripple = document.createElement('span');
-                            const rect = this.getBoundingClientRect();
-                            const size = Math.max(rect.width, rect.height);
-                            const x = e.clientX - rect.left - size / 2;
-                            const y = e.clientY - rect.top - size / 2;
-
-                            ripple.style.width = ripple.style.height = size + 'px';
-                            ripple.style.left = x + 'px';
-                            ripple.style.top = y + 'px';
-                            ripple.classList.add('ripple-effect');
-
-                            this.appendChild(ripple);
-
-                            setTimeout(() => {
-                                ripple.remove();
-                            }, 600);
-                        });
-
-                        // Add floating animation delay to form elements
-                        const formElements = document.querySelectorAll('.form-input');
-                        formElements.forEach((element, index) => {
-                            element.style.animationDelay = `${index * 0.1}s`;
-                        });
-                    });
-                </script>
 
                 <!-- Contact Info -->
                 <div class="animate-slideInRight space-y-8">
@@ -1591,8 +1380,8 @@
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2 text-gray-300">
                         <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
                         <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
                         <li><a href="#team" class="hover:text-white transition-colors">Our Team</a></li>
                         <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
                     </ul>
@@ -1600,159 +1389,18 @@
             </div>
 
             <div class="border-t border-gray-700 mt-8 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex flex-col md:flex-row">
                     <p class="text-gray-300 mb-4 md:mb-0">
                         &copy; <span id="current-year"></span> Dizealital. All rights reserved. | Designed with ❤️
-                        for
-                        digital success.
+                        for digital success by Rounak Jana.
                     </p>
-                    <div class="flex space-x-6 text-gray-300">
-                        <!-- <a href="#terms" class="hover:text-white transition-colors">Terms & Conditions</a> -->
-                        <!-- <a href="#privacy" class="hover:text-white transition-colors">Privacy Policy</a> -->
-                        <!-- Add Terms Modal Trigger Button -->
-                        <button id="termsButton"
-                            class="ml-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-1 px-4 rounded transition duration-300">View
-                            Terms and Conditions</button>
-                    </div>
+
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Terms & Conditions Modal (hidden by default) -->
-    <div id="termsModal" class="fixed inset-0 modal-overlay z-50 flex items-center justify-center p-4 hidden">
-        <div class="bg-white rounded-lg shadow-2xl modal-content fade-in max-w-4xl w-full">
-            <div class="flex items-center justify-between p-6 border-b border-gray-200">
-                <h2 class="text-3xl font-bold text-gray-900">Terms of Service</h2>
-                <button id="closeModal" class="text-gray-400 hover:text-gray-600 transition-colors duration-200">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                        </path>
-                    </svg>
-                </button>
-            </div>
-            <div class="p-6">
-                <div class="prose max-w-none text-gray-700">
-                    <ol class="list-decimal pl-6 space-y-4">
-                        <li><strong>Introduction</strong><br>Welcome to Dizealital, a digital service platform
-                            providing
-                            Services like:-<br>1) Web Development<br>2) Search Engine Optimisation (SEO)<br>3)
-                            Facebook
-                            ads<br>4) Instagram ads<br>5) Email Marketing<br>6) Social Media Marketing (SMM)<br>7)
-                            Performance Marketing<br>8) Content Marketing.<br>By accessing or using our website or
-                            services, you agree to these Terms of Service.</li>
-                        <li><strong>Definitions</strong><br>- "We" or "Us" refers to [Your Company Name].<br>- "You"
-                            or
-                            "User" refers to anyone accessing or using our website or services.<br>- "Services"
-                            refers
-                            to the digital services provided by us.</li>
-                        <li><strong>Use of Services</strong><br>- You must be at least 18 years old to use our
-                            services.<br>- You agree to use our services for lawful purposes only.<br>- You're
-                            responsible for maintaining the confidentiality of your account information.</li>
-                        <li><strong>Intellectual Property</strong><br>- Our website and services, including content,
-                            logos, and trademarks, are owned by us or our licensors.<br>- You may not reproduce,
-                            distribute, or modify our content without permission.</li>
-                        <li><strong>Payment and Refund</strong><br>- Our payment terms are as follows: [insert
-                            payment
-                            terms].<br>- Refunds are handled according to our refund policy: [insert refund policy].
-                        </li>
-                        <li><strong>Data Privacy</strong><br>- Our Privacy Policy explains how we collect, use, and
-                            protect your personal data.<br>- You agree to our Privacy Policy by using our services.
-                        </li>
-                        <li><strong>Liability and Disclaimer</strong><br>- We strive to provide accurate and
-                            reliable
-                            services, but we make no warranties or representations.<br>- We're not liable for
-                            damages or
-                            losses resulting from our services, except as required by law.</li>
-                        <li><strong>Termination</strong><br>- We reserve the right to terminate or suspend your
-                            access
-                            to our services without notice.<br>- Upon termination, your rights to use our services
-                            cease
-                            immediately.</li>
-                        <li><strong>Changes to Terms</strong><br>- We may update these Terms of Service at any time
-                            without notice.<br>- Your continued use of our services implies acceptance of the
-                            updated
-                            terms.</li>
-                        <li><strong>Governing Law</strong><br>- These Terms of Service are governed by and construed
-                            in
-                            accordance with the laws of Your Country/State.<br>- Any disputes arising from these
-                            terms
-                            will be resolved through insert dispute resolution process.</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="flex justify-end p-6 border-t border-gray-200">
-                <button id="acceptTerms"
-                    class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-md mr-3 transition duration-300">Accept
-                    Terms</button>
-                <button id="closeModalFooter"
-                    class="bg-gray-300 hover:bg-gray-400 text-gray-700 font-semibold py-2 px-4 rounded-md transition duration-300">Close</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal CSS -->
-    <style>
-        .modal-overlay {
-            background-color: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(4px);
-        }
-
-        .modal-content {
-            max-height: 80vh;
-            overflow-y: auto;
-        }
-
-        .modal-content::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        .modal-content::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 4px;
-        }
-
-        .modal-content::-webkit-scrollbar-thumb {
-            background: #888;
-            border-radius: 4px;
-        }
-
-        .modal-content::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
-
-        .fade-in {
-            animation: fadeIn 0.3s ease-out;
-        }
-
-        .fade-out {
-            animation: fadeOut 0.3s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.9);
-            }
-
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        @keyframes fadeOut {
-            from {
-                opacity: 1;
-                transform: scale(1);
-            }
-
-            to {
-                opacity: 0;
-                transform: scale(0.9);
-            }
-        }
-    </style>
 
     <script>
         // Typing animation for the brand name
@@ -1978,6 +1626,174 @@
             if (e.key === 'Escape' && termsModal && !termsModal.classList.contains('hidden')) {
                 closeModalFunction();
             }
+        });
+
+        // Form handling
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contact-form');
+            const submitBtn = document.getElementById('submit-btn');
+            const btnText = document.getElementById('btn-text');
+            const btnLoading = document.getElementById('btn-loading');
+            const successMessage = document.getElementById('success-message');
+            const errorMessage = document.getElementById('error-message');
+            const errorText = document.getElementById('error-text');
+
+            // Hide messages initially
+            successMessage.style.display = 'none';
+            errorMessage.style.display = 'none';
+
+            // Form validation
+            function validateForm(formData) {
+                const errors = [];
+
+                if (!formData.get('name').trim()) {
+                    errors.push('Name is required');
+                }
+
+                if (!formData.get('email').trim()) {
+                    errors.push('Email is required');
+                } else if (!isValidEmail(formData.get('email'))) {
+                    errors.push('Please enter a valid email address');
+                }
+
+                if (!formData.get('service')) {
+                    errors.push('Please select a service');
+                }
+
+                if (!formData.get('message').trim()) {
+                    errors.push('Message is required');
+                }
+
+                return errors;
+            }
+
+            function isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+
+            // Show/hide messages
+            function showMessage(element, message = null) {
+                if (message) {
+                    errorText.textContent = message;
+                }
+                element.style.display = 'block';
+                setTimeout(() => {
+                    element.classList.add('show');
+                }, 10);
+
+                // Auto hide after 5 seconds
+                setTimeout(() => {
+                    hideMessage(element);
+                }, 5000);
+            }
+
+            function hideMessage(element) {
+                element.classList.remove('show');
+                setTimeout(() => {
+                    element.style.display = 'none';
+                }, 300);
+            }
+
+            // Set loading state
+            function setLoading(loading) {
+                if (loading) {
+                    submitBtn.disabled = true;
+                    btnText.classList.add('hidden');
+                    btnLoading.classList.remove('hidden');
+                } else {
+                    submitBtn.disabled = false;
+                    btnText.classList.remove('hidden');
+                    btnLoading.classList.add('hidden');
+                }
+            }
+
+            // Simulate form submission (replace with actual backend call)
+            async function submitForm(formData) {
+                // Simulate API call delay
+                await new Promise(resolve => setTimeout(resolve, 2000));
+
+                // Simulate random success/failure for demo
+                if (Math.random() > 0.2) {
+                    return { success: true };
+                } else {
+                    throw new Error('Server error occurred');
+                }
+            }
+
+            // Form submit handler
+            form.addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                // Hide any existing messages
+                hideMessage(successMessage);
+                hideMessage(errorMessage);
+
+                const formData = new FormData(form);
+
+                // Validate form
+                const errors = validateForm(formData);
+                if (errors.length > 0) {
+                    showMessage(errorMessage, errors.join(', '));
+                    return;
+                }
+
+                try {
+                    setLoading(true);
+
+                    // Submit form (replace this with your actual submission logic)
+                    const result = await submitForm(formData);
+
+                    if (result.success) {
+                        showMessage(successMessage);
+                        form.reset(); // Clear form on success
+                    }
+
+                } catch (error) {
+                    console.error('Form submission error:', error);
+                    showMessage(errorMessage, 'Failed to send message. Please try again later.');
+                } finally {
+                    setLoading(false);
+                }
+            });
+
+            // Enhanced input interactions
+            const inputs = document.querySelectorAll('input, select, textarea');
+            inputs.forEach(input => {
+                input.addEventListener('focus', function () {
+                    this.parentElement.classList.add('focused');
+                });
+
+                input.addEventListener('blur', function () {
+                    this.parentElement.classList.remove('focused');
+                });
+            });
+
+            // Add ripple effect to button clicks
+            submitBtn.addEventListener('click', function (e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.classList.add('ripple-effect');
+
+                this.appendChild(ripple);
+
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+
+            // Add floating animation delay to form elements
+            const formElements = document.querySelectorAll('.form-input');
+            formElements.forEach((element, index) => {
+                element.style.animationDelay = `${index * 0.1}s`;
+            });
         });
     </script>
 </body>
